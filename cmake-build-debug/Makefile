@@ -2040,6 +2040,33 @@ src/ft_printf.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/ft_printf.c.s
 .PHONY : src/ft_printf.c.s
 
+src/handle/char.o: src/handle/char.c.o
+
+.PHONY : src/handle/char.o
+
+# target to build an object file
+src/handle/char.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/char.c.o
+.PHONY : src/handle/char.c.o
+
+src/handle/char.i: src/handle/char.c.i
+
+.PHONY : src/handle/char.i
+
+# target to preprocess a source file
+src/handle/char.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/char.c.i
+.PHONY : src/handle/char.c.i
+
+src/handle/char.s: src/handle/char.c.s
+
+.PHONY : src/handle/char.s
+
+# target to generate assembly for a file
+src/handle/char.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/char.c.s
+.PHONY : src/handle/char.c.s
+
 src/handle/handle.o: src/handle/handle.c.o
 
 .PHONY : src/handle/handle.o
@@ -2066,6 +2093,114 @@ src/handle/handle.s: src/handle/handle.c.s
 src/handle/handle.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/handle.c.s
 .PHONY : src/handle/handle.c.s
+
+src/handle/number.o: src/handle/number.c.o
+
+.PHONY : src/handle/number.o
+
+# target to build an object file
+src/handle/number.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/number.c.o
+.PHONY : src/handle/number.c.o
+
+src/handle/number.i: src/handle/number.c.i
+
+.PHONY : src/handle/number.i
+
+# target to preprocess a source file
+src/handle/number.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/number.c.i
+.PHONY : src/handle/number.c.i
+
+src/handle/number.s: src/handle/number.c.s
+
+.PHONY : src/handle/number.s
+
+# target to generate assembly for a file
+src/handle/number.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/number.c.s
+.PHONY : src/handle/number.c.s
+
+src/handle/wchar.o: src/handle/wchar.c.o
+
+.PHONY : src/handle/wchar.o
+
+# target to build an object file
+src/handle/wchar.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o
+.PHONY : src/handle/wchar.c.o
+
+src/handle/wchar.i: src/handle/wchar.c.i
+
+.PHONY : src/handle/wchar.i
+
+# target to preprocess a source file
+src/handle/wchar.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.i
+.PHONY : src/handle/wchar.c.i
+
+src/handle/wchar.s: src/handle/wchar.c.s
+
+.PHONY : src/handle/wchar.s
+
+# target to generate assembly for a file
+src/handle/wchar.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.s
+.PHONY : src/handle/wchar.c.s
+
+src/helpers/buffer.o: src/helpers/buffer.c.o
+
+.PHONY : src/helpers/buffer.o
+
+# target to build an object file
+src/helpers/buffer.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.o
+.PHONY : src/helpers/buffer.c.o
+
+src/helpers/buffer.i: src/helpers/buffer.c.i
+
+.PHONY : src/helpers/buffer.i
+
+# target to preprocess a source file
+src/helpers/buffer.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.i
+.PHONY : src/helpers/buffer.c.i
+
+src/helpers/buffer.s: src/helpers/buffer.c.s
+
+.PHONY : src/helpers/buffer.s
+
+# target to generate assembly for a file
+src/helpers/buffer.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.s
+.PHONY : src/helpers/buffer.c.s
+
+src/helpers/wide_char.o: src/helpers/wide_char.c.o
+
+.PHONY : src/helpers/wide_char.o
+
+# target to build an object file
+src/helpers/wide_char.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o
+.PHONY : src/helpers/wide_char.c.o
+
+src/helpers/wide_char.i: src/helpers/wide_char.c.i
+
+.PHONY : src/helpers/wide_char.i
+
+# target to preprocess a source file
+src/helpers/wide_char.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.i
+.PHONY : src/helpers/wide_char.c.i
+
+src/helpers/wide_char.s: src/helpers/wide_char.c.s
+
+.PHONY : src/helpers/wide_char.s
+
+# target to generate assembly for a file
+src/helpers/wide_char.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.s
+.PHONY : src/helpers/wide_char.c.s
 
 src/parse/flags.o: src/parse/flags.c.o
 
@@ -2424,9 +2559,24 @@ help:
 	@echo "... src/ft_printf.o"
 	@echo "... src/ft_printf.i"
 	@echo "... src/ft_printf.s"
+	@echo "... src/handle/char.o"
+	@echo "... src/handle/char.i"
+	@echo "... src/handle/char.s"
 	@echo "... src/handle/handle.o"
 	@echo "... src/handle/handle.i"
 	@echo "... src/handle/handle.s"
+	@echo "... src/handle/number.o"
+	@echo "... src/handle/number.i"
+	@echo "... src/handle/number.s"
+	@echo "... src/handle/wchar.o"
+	@echo "... src/handle/wchar.i"
+	@echo "... src/handle/wchar.s"
+	@echo "... src/helpers/buffer.o"
+	@echo "... src/helpers/buffer.i"
+	@echo "... src/helpers/buffer.s"
+	@echo "... src/helpers/wide_char.o"
+	@echo "... src/helpers/wide_char.i"
+	@echo "... src/helpers/wide_char.s"
 	@echo "... src/parse/flags.o"
 	@echo "... src/parse/flags.i"
 	@echo "... src/parse/flags.s"

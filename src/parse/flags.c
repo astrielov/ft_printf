@@ -12,20 +12,20 @@
 
 #include "../../includes/ft_printf.h"
 
-void	parse_flags(char **format, t_pf *pf)
+void	parse_flags(char **format, t_pf *arg)
 {
 	while (1)
 	{
 		if (**format == '+')
-			pf->flags |= FLAG_PLUS;
+			arg->flags |= FLAG_PLUS;
 		else if (**format == '#')
-			pf->flags |= FLAG_HASH;
+			arg->flags |= FLAG_HASH;
 		else if (**format == '-')
-			pf->flags |= FLAG_MINUS;
+			arg->flags |= FLAG_MINUS;
 		else if (**format == ' ')
-			pf->flags |= FLAG_SPACE;
+			arg->flags |= FLAG_SPACE;
 		else if (**format == '0')
-			pf->flags |= FLAG_ZERO;
+			arg->flags |= FLAG_ZERO;
 		else
 			break;
 		(*format)++;

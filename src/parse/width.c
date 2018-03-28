@@ -13,23 +13,23 @@
 #include "../../includes/ft_printf.h"
 #include "../../libft/libft.h"
 
-void	parse_width(char **format, va_list va, t_pf *pf)
+void	parse_width(char **format, va_list va, t_pf *arg)
 {
 	int 	w;
 
 	while (1)
 	{
 		if (ft_isdigit(**format))
-			pf->width = parse_atoi(format);
+			arg->width = parse_atoi(format);
 		else if (**format == '*')
 		{
 			if ((w = va_arg(va, int)) < 0)
 			{
-				pf->flags |= FLAG_MINUS;
-				pf->width = (unsigned int)-w;
+				arg->flags |= FLAG_MINUS;
+				arg->width = (unsigned int)-w;
 			}
 			else
-				pf->width = (unsigned int)w;
+				arg->width = (unsigned int)w;
 			(*format)++;
 		}
 		else

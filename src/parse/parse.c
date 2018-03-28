@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/27 21:28:40 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/28 11:23:30 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/03/28 11:36:27 by astrielov        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,19 +23,19 @@ unsigned int	parse_atoi(char **format)
 	return (res);
 }
 
-void	pf_realloc(t_pf **pf)
+void	pf_realloc(t_pf **arg)
 {
-	if (*pf)
-		free(*pf);
-	*pf = (t_pf *)ft_memalloc(sizeof(t_pf));
+	if (*arg)
+		free(*arg);
+	*arg = (t_pf *)ft_memalloc(sizeof(t_pf));
 }
 
-void	parse(char **format, va_list va, t_pf **pf)
+void	parse(char **format, va_list va, t_pf **arg)
 {
-	pf_realloc(pf);
-	parse_flags(format, *pf);
-	parse_width(format, va, *pf);
-	parse_precision(format, va, *pf);
-	parse_length(format, *pf);
-	(*pf)->specifier = *((*format)++);
+	pf_realloc(arg);
+	parse_flags(format, *arg);
+	parse_width(format, va, *arg);
+	parse_precision(format, va, *arg);
+	parse_length(format, *arg);
+	(*arg)->specifier = *((*format)++);
 }

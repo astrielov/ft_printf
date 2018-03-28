@@ -6,71 +6,52 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/27 16:32:56 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/28 12:51:41 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/03/28 21:51:57 by astrielov        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 #include "../libft/libft.h"
 
-void	buff_realloc(char **buff, int *buff_size)
+int		inner_pf(char *format, va_list va, t_buff *buff)
 {
-	char	*new_buff;
-	int		i;
+	t_pf		*arg_params;
+	t_buff	*arg_buff;
 
-	if (!*buff)
-	{
-		*buff = (char *)ft_memalloc((size_t )*buff_size);
-		return ;
-	}
-	new_buff = (char *)ft_memalloc((size_t)*buff_size << 1);
-	i = -1;
-	while (++i < *buff_size)
-		new_buff[i] = (*buff)[i];
-	free(*buff);
-	*buff = new_buff;
-	*buff_size <<= 1;
-}
-
-int		inner_pf(char *format, va_list va, char **buff, int *buff_size)
-{
-	t_pf	*pf;
-	int 	buff_ind;
-
-	pf = NULL;
-	buff_realloc(buff, buff_size);
-	buff_ind = 0;
+	arg_params = NULL;
+	buff_realloc(buff);
 	while (*format)
 	{
-		if (buff_ind >= *buff_size)
-			buff_realloc(buff, buff_size);
+		if (buff->index >= buff->size)
+			buff_realloc(buff);
 		if (*format != '%')
 		{
-			(*buff)[buff_ind++] = *format++;
+			(buff->buff)[buff->index++] = (unsigned char)*format++;
 			continue;
 		}
 		format++;
-		parse(&format, va, &pf);
-		handle_specifier(va, pf, );
-		debug_print_pf(pf);
+		parse(&format, va, &arg_params);
+//		debug_print_pf(arg_params);
+		arg_buff = handle_argument(va, arg_params);
+		concat_buffs(buff, &arg_buff);
 	}
-	return buff_ind;
+	ft_memdel((void **) &arg_params);
+	return ((int )buff->index);
 }
 
 int 	ft_printf(const char *format, ...)
 {
 	va_list	va;
-	char		*buffer;
+	t_buff	*buff;
 	int			result;
-	int			buff_size;
 
-	buffer = NULL;
-	buff_size = 1 << 10; // 1024
-	buff_realloc(&buffer, &buff_size);
+	buff = (t_buff *)ft_memalloc(sizeof(t_buff));
+	buff_realloc(buff);
 	va_start(va, format);
-	result = inner_pf((char *)format, va, &buffer, &buff_size);
+	result = inner_pf((char *)format, va, buff);
 	va_end(va);
-	write(1, buffer, (size_t )result);
-	ft_memdel((void **) &buffer);
+	write(1, buff->buff, buff->index);
+	ft_memdel((void **) &(buff->buff));
+	ft_memdel((void **) &buff);
 	return result;
 }

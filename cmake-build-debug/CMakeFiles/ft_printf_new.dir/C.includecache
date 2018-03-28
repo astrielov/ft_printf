@@ -6,8 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/home/astrielov/Documents/projects/ft_printf_new/debug_print_pf.c
+includes/ft_printf.h
+/home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
+libft/libft.h
+/home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
+
 /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
 stdio.h
+-
+inttypes.h
 -
 stdarg.h
 -
@@ -144,6 +152,10 @@ libft.h
 libft.h
 /home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
 
+/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putnstr.c
+libft.h
+/home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
+
 /home/astrielov/Documents/projects/ft_printf_new/libft/ft_putstr.c
 libft.h
 /home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
@@ -272,19 +284,33 @@ string.h
 fcntl.h
 -
 
-/home/astrielov/Documents/projects/ft_printf_new/print_pf.c
-includes/ft_printf.h
-/home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
-libft/libft.h
-/home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
-
 /home/astrielov/Documents/projects/ft_printf_new/src/ft_printf.c
 ../includes/ft_printf.h
 /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
 ../libft/libft.h
 /home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
 
+/home/astrielov/Documents/projects/ft_printf_new/src/handle/char.c
+../../includes/ft_printf.h
+/home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
+../../libft/libft.h
+/home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
+
 /home/astrielov/Documents/projects/ft_printf_new/src/handle/handle.c
+../../includes/ft_printf.h
+/home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
+../../libft/libft.h
+/home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
+
+/home/astrielov/Documents/projects/ft_printf_new/src/handle/number.c
+../../includes/ft_printf.h
+/home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
+
+/home/astrielov/Documents/projects/ft_printf_new/src/helpers/buffer.c
+../../libft/libft.h
+/home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
+../../includes/ft_printf.h
+/home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
 
 /home/astrielov/Documents/projects/ft_printf_new/src/parse/flags.c
 ../../includes/ft_printf.h

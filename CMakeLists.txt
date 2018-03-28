@@ -85,7 +85,7 @@ set(FT_PRINTF_NEW
         src/parse/precision.c
         src/parse/length.c
         src/handle/handle.c
-        )
+        src/handle/number.c src/handle/char.c src/helpers/buffer.c src/handle/wchar.c)
 
 add_library(ft_printf_new
         ${FT_PRINTF_NEW}
