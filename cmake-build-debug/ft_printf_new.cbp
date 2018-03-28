@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/debug_print_pf.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h">
 			<Option target="ft_printf_new"/>
 		</Unit>
@@ -188,6 +191,9 @@
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putnbr_fd.c">
 			<Option target="ft_printf_new"/>
 		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putnstr.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putstr.c">
 			<Option target="ft_printf_new"/>
 		</Unit>
@@ -272,6 +278,12 @@
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strsub.c">
 			<Option target="ft_printf_new"/>
 		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strtolow.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strtoupp.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strtrim.c">
 			<Option target="ft_printf_new"/>
 		</Unit>
@@ -285,6 +297,24 @@
 			<Option target="ft_printf_new"/>
 		</Unit>
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/ft_printf.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/handle/handle.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/parse/flags.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/parse/length.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/parse/parse.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/parse/precision.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/parse/width.c">
 			<Option target="ft_printf_new"/>
 		</Unit>
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/CMakeLists.txt">

@@ -123,6 +123,33 @@ ft_printf_new/fast:
 	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/build
 .PHONY : ft_printf_new/fast
 
+debug_print_pf.o: debug_print_pf.c.o
+
+.PHONY : debug_print_pf.o
+
+# target to build an object file
+debug_print_pf.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/debug_print_pf.c.o
+.PHONY : debug_print_pf.c.o
+
+debug_print_pf.i: debug_print_pf.c.i
+
+.PHONY : debug_print_pf.i
+
+# target to preprocess a source file
+debug_print_pf.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/debug_print_pf.c.i
+.PHONY : debug_print_pf.c.i
+
+debug_print_pf.s: debug_print_pf.c.s
+
+.PHONY : debug_print_pf.s
+
+# target to generate assembly for a file
+debug_print_pf.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/debug_print_pf.c.s
+.PHONY : debug_print_pf.c.s
+
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -1068,6 +1095,33 @@ libft/ft_putnbr_fd.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/libft/ft_putnbr_fd.c.s
 .PHONY : libft/ft_putnbr_fd.c.s
 
+libft/ft_putnstr.o: libft/ft_putnstr.c.o
+
+.PHONY : libft/ft_putnstr.o
+
+# target to build an object file
+libft/ft_putnstr.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/libft/ft_putnstr.c.o
+.PHONY : libft/ft_putnstr.c.o
+
+libft/ft_putnstr.i: libft/ft_putnstr.c.i
+
+.PHONY : libft/ft_putnstr.i
+
+# target to preprocess a source file
+libft/ft_putnstr.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/libft/ft_putnstr.c.i
+.PHONY : libft/ft_putnstr.c.i
+
+libft/ft_putnstr.s: libft/ft_putnstr.c.s
+
+.PHONY : libft/ft_putnstr.s
+
+# target to generate assembly for a file
+libft/ft_putnstr.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/libft/ft_putnstr.c.s
+.PHONY : libft/ft_putnstr.c.s
+
 libft/ft_putstr.o: libft/ft_putstr.c.o
 
 .PHONY : libft/ft_putstr.o
@@ -1824,6 +1878,60 @@ libft/ft_strsub.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/libft/ft_strsub.c.s
 .PHONY : libft/ft_strsub.c.s
 
+libft/ft_strtolow.o: libft/ft_strtolow.c.o
+
+.PHONY : libft/ft_strtolow.o
+
+# target to build an object file
+libft/ft_strtolow.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/libft/ft_strtolow.c.o
+.PHONY : libft/ft_strtolow.c.o
+
+libft/ft_strtolow.i: libft/ft_strtolow.c.i
+
+.PHONY : libft/ft_strtolow.i
+
+# target to preprocess a source file
+libft/ft_strtolow.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/libft/ft_strtolow.c.i
+.PHONY : libft/ft_strtolow.c.i
+
+libft/ft_strtolow.s: libft/ft_strtolow.c.s
+
+.PHONY : libft/ft_strtolow.s
+
+# target to generate assembly for a file
+libft/ft_strtolow.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/libft/ft_strtolow.c.s
+.PHONY : libft/ft_strtolow.c.s
+
+libft/ft_strtoupp.o: libft/ft_strtoupp.c.o
+
+.PHONY : libft/ft_strtoupp.o
+
+# target to build an object file
+libft/ft_strtoupp.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/libft/ft_strtoupp.c.o
+.PHONY : libft/ft_strtoupp.c.o
+
+libft/ft_strtoupp.i: libft/ft_strtoupp.c.i
+
+.PHONY : libft/ft_strtoupp.i
+
+# target to preprocess a source file
+libft/ft_strtoupp.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/libft/ft_strtoupp.c.i
+.PHONY : libft/ft_strtoupp.c.i
+
+libft/ft_strtoupp.s: libft/ft_strtoupp.c.s
+
+.PHONY : libft/ft_strtoupp.s
+
+# target to generate assembly for a file
+libft/ft_strtoupp.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/libft/ft_strtoupp.c.s
+.PHONY : libft/ft_strtoupp.c.s
+
 libft/ft_strtrim.o: libft/ft_strtrim.c.o
 
 .PHONY : libft/ft_strtrim.o
@@ -1932,6 +2040,168 @@ src/ft_printf.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/ft_printf.c.s
 .PHONY : src/ft_printf.c.s
 
+src/handle/handle.o: src/handle/handle.c.o
+
+.PHONY : src/handle/handle.o
+
+# target to build an object file
+src/handle/handle.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/handle.c.o
+.PHONY : src/handle/handle.c.o
+
+src/handle/handle.i: src/handle/handle.c.i
+
+.PHONY : src/handle/handle.i
+
+# target to preprocess a source file
+src/handle/handle.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/handle.c.i
+.PHONY : src/handle/handle.c.i
+
+src/handle/handle.s: src/handle/handle.c.s
+
+.PHONY : src/handle/handle.s
+
+# target to generate assembly for a file
+src/handle/handle.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/handle.c.s
+.PHONY : src/handle/handle.c.s
+
+src/parse/flags.o: src/parse/flags.c.o
+
+.PHONY : src/parse/flags.o
+
+# target to build an object file
+src/parse/flags.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/flags.c.o
+.PHONY : src/parse/flags.c.o
+
+src/parse/flags.i: src/parse/flags.c.i
+
+.PHONY : src/parse/flags.i
+
+# target to preprocess a source file
+src/parse/flags.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/flags.c.i
+.PHONY : src/parse/flags.c.i
+
+src/parse/flags.s: src/parse/flags.c.s
+
+.PHONY : src/parse/flags.s
+
+# target to generate assembly for a file
+src/parse/flags.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/flags.c.s
+.PHONY : src/parse/flags.c.s
+
+src/parse/length.o: src/parse/length.c.o
+
+.PHONY : src/parse/length.o
+
+# target to build an object file
+src/parse/length.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/length.c.o
+.PHONY : src/parse/length.c.o
+
+src/parse/length.i: src/parse/length.c.i
+
+.PHONY : src/parse/length.i
+
+# target to preprocess a source file
+src/parse/length.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/length.c.i
+.PHONY : src/parse/length.c.i
+
+src/parse/length.s: src/parse/length.c.s
+
+.PHONY : src/parse/length.s
+
+# target to generate assembly for a file
+src/parse/length.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/length.c.s
+.PHONY : src/parse/length.c.s
+
+src/parse/parse.o: src/parse/parse.c.o
+
+.PHONY : src/parse/parse.o
+
+# target to build an object file
+src/parse/parse.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/parse.c.o
+.PHONY : src/parse/parse.c.o
+
+src/parse/parse.i: src/parse/parse.c.i
+
+.PHONY : src/parse/parse.i
+
+# target to preprocess a source file
+src/parse/parse.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/parse.c.i
+.PHONY : src/parse/parse.c.i
+
+src/parse/parse.s: src/parse/parse.c.s
+
+.PHONY : src/parse/parse.s
+
+# target to generate assembly for a file
+src/parse/parse.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/parse.c.s
+.PHONY : src/parse/parse.c.s
+
+src/parse/precision.o: src/parse/precision.c.o
+
+.PHONY : src/parse/precision.o
+
+# target to build an object file
+src/parse/precision.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/precision.c.o
+.PHONY : src/parse/precision.c.o
+
+src/parse/precision.i: src/parse/precision.c.i
+
+.PHONY : src/parse/precision.i
+
+# target to preprocess a source file
+src/parse/precision.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/precision.c.i
+.PHONY : src/parse/precision.c.i
+
+src/parse/precision.s: src/parse/precision.c.s
+
+.PHONY : src/parse/precision.s
+
+# target to generate assembly for a file
+src/parse/precision.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/precision.c.s
+.PHONY : src/parse/precision.c.s
+
+src/parse/width.o: src/parse/width.c.o
+
+.PHONY : src/parse/width.o
+
+# target to build an object file
+src/parse/width.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/width.c.o
+.PHONY : src/parse/width.c.o
+
+src/parse/width.i: src/parse/width.c.i
+
+.PHONY : src/parse/width.i
+
+# target to preprocess a source file
+src/parse/width.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/width.c.i
+.PHONY : src/parse/width.c.i
+
+src/parse/width.s: src/parse/width.c.s
+
+.PHONY : src/parse/width.s
+
+# target to generate assembly for a file
+src/parse/width.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/parse/width.c.s
+.PHONY : src/parse/width.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1941,6 +2211,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ft_printf_new"
+	@echo "... debug_print_pf.o"
+	@echo "... debug_print_pf.i"
+	@echo "... debug_print_pf.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -2046,6 +2319,9 @@ help:
 	@echo "... libft/ft_putnbr_fd.o"
 	@echo "... libft/ft_putnbr_fd.i"
 	@echo "... libft/ft_putnbr_fd.s"
+	@echo "... libft/ft_putnstr.o"
+	@echo "... libft/ft_putnstr.i"
+	@echo "... libft/ft_putnstr.s"
 	@echo "... libft/ft_putstr.o"
 	@echo "... libft/ft_putstr.i"
 	@echo "... libft/ft_putstr.s"
@@ -2130,6 +2406,12 @@ help:
 	@echo "... libft/ft_strsub.o"
 	@echo "... libft/ft_strsub.i"
 	@echo "... libft/ft_strsub.s"
+	@echo "... libft/ft_strtolow.o"
+	@echo "... libft/ft_strtolow.i"
+	@echo "... libft/ft_strtolow.s"
+	@echo "... libft/ft_strtoupp.o"
+	@echo "... libft/ft_strtoupp.i"
+	@echo "... libft/ft_strtoupp.s"
 	@echo "... libft/ft_strtrim.o"
 	@echo "... libft/ft_strtrim.i"
 	@echo "... libft/ft_strtrim.s"
@@ -2142,6 +2424,24 @@ help:
 	@echo "... src/ft_printf.o"
 	@echo "... src/ft_printf.i"
 	@echo "... src/ft_printf.s"
+	@echo "... src/handle/handle.o"
+	@echo "... src/handle/handle.i"
+	@echo "... src/handle/handle.s"
+	@echo "... src/parse/flags.o"
+	@echo "... src/parse/flags.i"
+	@echo "... src/parse/flags.s"
+	@echo "... src/parse/length.o"
+	@echo "... src/parse/length.i"
+	@echo "... src/parse/length.s"
+	@echo "... src/parse/parse.o"
+	@echo "... src/parse/parse.i"
+	@echo "... src/parse/parse.s"
+	@echo "... src/parse/precision.o"
+	@echo "... src/parse/precision.i"
+	@echo "... src/parse/precision.s"
+	@echo "... src/parse/width.o"
+	@echo "... src/parse/width.i"
+	@echo "... src/parse/width.s"
 .PHONY : help
 
 

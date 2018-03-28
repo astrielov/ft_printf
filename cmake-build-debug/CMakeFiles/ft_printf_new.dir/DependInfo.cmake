@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/astrielov/Documents/projects/ft_printf_new/debug_print_pf.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/debug_print_pf.c.o"
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_atoi.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.o"
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_bzero.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_bzero.c.o"
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_d_bblsort.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_d_bblsort.c.o"
@@ -39,6 +40,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putendl_fd.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_putendl_fd.c.o"
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putnbr.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_putnbr.c.o"
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putnbr_fd.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_putnbr_fd.c.o"
+  "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putnstr.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_putnstr.c.o"
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putstr.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_putstr.c.o"
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putstr_fd.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_putstr_fd.c.o"
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strcat.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_strcat.c.o"
@@ -67,10 +69,18 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strsplit.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_strsplit.c.o"
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strstr.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_strstr.c.o"
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strsub.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_strsub.c.o"
+  "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strtolow.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_strtolow.c.o"
+  "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strtoupp.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_strtoupp.c.o"
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strtrim.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_strtrim.c.o"
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_tolower.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_tolower.c.o"
   "/home/astrielov/Documents/projects/ft_printf_new/libft/ft_toupper.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/libft/ft_toupper.c.o"
   "/home/astrielov/Documents/projects/ft_printf_new/src/ft_printf.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/src/ft_printf.c.o"
+  "/home/astrielov/Documents/projects/ft_printf_new/src/handle/handle.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/src/handle/handle.c.o"
+  "/home/astrielov/Documents/projects/ft_printf_new/src/parse/flags.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/src/parse/flags.c.o"
+  "/home/astrielov/Documents/projects/ft_printf_new/src/parse/length.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/src/parse/length.c.o"
+  "/home/astrielov/Documents/projects/ft_printf_new/src/parse/parse.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/src/parse/parse.c.o"
+  "/home/astrielov/Documents/projects/ft_printf_new/src/parse/precision.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/src/parse/precision.c.o"
+  "/home/astrielov/Documents/projects/ft_printf_new/src/parse/width.c" "/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles/ft_printf_new.dir/src/parse/width.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

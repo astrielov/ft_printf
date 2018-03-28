@@ -39,6 +39,7 @@ set(LIBFT
         libft/ft_putendl_fd.c
         libft/ft_putnbr.c
         libft/ft_putnbr_fd.c
+        libft/ft_putnstr.c
         libft/ft_putstr.c
         libft/ft_putstr_fd.c
         libft/ft_strcat.c
@@ -67,6 +68,8 @@ set(LIBFT
         libft/ft_strsplit.c
         libft/ft_strstr.c
         libft/ft_strsub.c
+        libft/ft_strtolow.c
+        libft/ft_strtoupp.c
         libft/ft_strtrim.c
         libft/ft_tolower.c
         libft/ft_toupper.c
@@ -75,9 +78,17 @@ set(LIBFT
 
 set(FT_PRINTF_NEW
         src/ft_printf.c
-        includes/ft_printf.h)
+        includes/ft_printf.h
+        src/parse/flags.c
+        src/parse/parse.c
+        src/parse/width.c
+        src/parse/precision.c
+        src/parse/length.c
+        src/handle/handle.c
+        )
 
 add_library(ft_printf_new
         ${FT_PRINTF_NEW}
         ${LIBFT}
+        debug_print_pf.c
         )
