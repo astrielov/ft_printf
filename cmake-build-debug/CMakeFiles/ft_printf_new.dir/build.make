@@ -297,33 +297,9 @@ CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.o.provides: CMakeFiles/ft_prin
 CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.o.provides.build: CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.o
 
 
-CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o: CMakeFiles/ft_printf_new.dir/flags.make
-CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o: ../src/helpers/wide_char.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/src/helpers/wide_char.c
-
-CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/astrielov/Documents/projects/ft_printf_new/src/helpers/wide_char.c > CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.i
-
-CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/astrielov/Documents/projects/ft_printf_new/src/helpers/wide_char.c -o CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.s
-
-CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o.requires:
-
-.PHONY : CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o.requires
-
-CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o.provides: CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o.requires
-	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o.provides.build
-.PHONY : CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o.provides
-
-CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o.provides.build: CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o
-
-
 CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o: ../src/handle/wchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/src/handle/wchar.c
 
 CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.i: cmake_force
@@ -343,6 +319,30 @@ CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o.provides: CMakeFiles/ft_printf
 .PHONY : CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o.provides
 
 CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o.provides.build: CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o
+
+
+CMakeFiles/ft_printf_new.dir/src/handle/string.c.o: CMakeFiles/ft_printf_new.dir/flags.make
+CMakeFiles/ft_printf_new.dir/src/handle/string.c.o: ../src/handle/string.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/ft_printf_new.dir/src/handle/string.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/src/handle/string.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/src/handle/string.c
+
+CMakeFiles/ft_printf_new.dir/src/handle/string.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf_new.dir/src/handle/string.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/astrielov/Documents/projects/ft_printf_new/src/handle/string.c > CMakeFiles/ft_printf_new.dir/src/handle/string.c.i
+
+CMakeFiles/ft_printf_new.dir/src/handle/string.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf_new.dir/src/handle/string.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/astrielov/Documents/projects/ft_printf_new/src/handle/string.c -o CMakeFiles/ft_printf_new.dir/src/handle/string.c.s
+
+CMakeFiles/ft_printf_new.dir/src/handle/string.c.o.requires:
+
+.PHONY : CMakeFiles/ft_printf_new.dir/src/handle/string.c.o.requires
+
+CMakeFiles/ft_printf_new.dir/src/handle/string.c.o.provides: CMakeFiles/ft_printf_new.dir/src/handle/string.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/string.c.o.provides.build
+.PHONY : CMakeFiles/ft_printf_new.dir/src/handle/string.c.o.provides
+
+CMakeFiles/ft_printf_new.dir/src/handle/string.c.o.provides.build: CMakeFiles/ft_printf_new.dir/src/handle/string.c.o
 
 
 CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.o: CMakeFiles/ft_printf_new.dir/flags.make
@@ -2037,8 +2037,8 @@ ft_printf_new_OBJECTS = \
 "CMakeFiles/ft_printf_new.dir/src/handle/number.c.o" \
 "CMakeFiles/ft_printf_new.dir/src/handle/char.c.o" \
 "CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.o" \
-"CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o" \
 "CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o" \
+"CMakeFiles/ft_printf_new.dir/src/handle/string.c.o" \
 "CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.o" \
 "CMakeFiles/ft_printf_new.dir/libft/ft_bzero.c.o" \
 "CMakeFiles/ft_printf_new.dir/libft/ft_d_bblsort.c.o" \
@@ -2123,8 +2123,8 @@ libft_printf_new.a: CMakeFiles/ft_printf_new.dir/src/handle/handle.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/src/handle/number.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/src/handle/char.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.o
-libft_printf_new.a: CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o
+libft_printf_new.a: CMakeFiles/ft_printf_new.dir/src/handle/string.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/libft/ft_bzero.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/libft/ft_d_bblsort.c.o
@@ -2216,8 +2216,8 @@ CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/src/handle/h
 CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/src/handle/number.c.o.requires
 CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/src/handle/char.c.o.requires
 CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.o.requires
-CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o.requires
 CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o.requires
+CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/src/handle/string.c.o.requires
 CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.o.requires
 CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/libft/ft_bzero.c.o.requires
 CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/libft/ft_d_bblsort.c.o.requires

@@ -2121,6 +2121,33 @@ src/handle/number.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/number.c.s
 .PHONY : src/handle/number.c.s
 
+src/handle/string.o: src/handle/string.c.o
+
+.PHONY : src/handle/string.o
+
+# target to build an object file
+src/handle/string.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/string.c.o
+.PHONY : src/handle/string.c.o
+
+src/handle/string.i: src/handle/string.c.i
+
+.PHONY : src/handle/string.i
+
+# target to preprocess a source file
+src/handle/string.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/string.c.i
+.PHONY : src/handle/string.c.i
+
+src/handle/string.s: src/handle/string.c.s
+
+.PHONY : src/handle/string.s
+
+# target to generate assembly for a file
+src/handle/string.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/string.c.s
+.PHONY : src/handle/string.c.s
+
 src/handle/wchar.o: src/handle/wchar.c.o
 
 .PHONY : src/handle/wchar.o
@@ -2174,33 +2201,6 @@ src/helpers/buffer.s: src/helpers/buffer.c.s
 src/helpers/buffer.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.s
 .PHONY : src/helpers/buffer.c.s
-
-src/helpers/wide_char.o: src/helpers/wide_char.c.o
-
-.PHONY : src/helpers/wide_char.o
-
-# target to build an object file
-src/helpers/wide_char.c.o:
-	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.o
-.PHONY : src/helpers/wide_char.c.o
-
-src/helpers/wide_char.i: src/helpers/wide_char.c.i
-
-.PHONY : src/helpers/wide_char.i
-
-# target to preprocess a source file
-src/helpers/wide_char.c.i:
-	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.i
-.PHONY : src/helpers/wide_char.c.i
-
-src/helpers/wide_char.s: src/helpers/wide_char.c.s
-
-.PHONY : src/helpers/wide_char.s
-
-# target to generate assembly for a file
-src/helpers/wide_char.c.s:
-	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/helpers/wide_char.c.s
-.PHONY : src/helpers/wide_char.c.s
 
 src/parse/flags.o: src/parse/flags.c.o
 
@@ -2568,15 +2568,15 @@ help:
 	@echo "... src/handle/number.o"
 	@echo "... src/handle/number.i"
 	@echo "... src/handle/number.s"
+	@echo "... src/handle/string.o"
+	@echo "... src/handle/string.i"
+	@echo "... src/handle/string.s"
 	@echo "... src/handle/wchar.o"
 	@echo "... src/handle/wchar.i"
 	@echo "... src/handle/wchar.s"
 	@echo "... src/helpers/buffer.o"
 	@echo "... src/helpers/buffer.i"
 	@echo "... src/helpers/buffer.s"
-	@echo "... src/helpers/wide_char.o"
-	@echo "... src/helpers/wide_char.i"
-	@echo "... src/helpers/wide_char.s"
 	@echo "... src/parse/flags.o"
 	@echo "... src/parse/flags.i"
 	@echo "... src/parse/flags.s"

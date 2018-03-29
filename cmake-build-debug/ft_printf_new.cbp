@@ -308,13 +308,13 @@
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/handle/number.c">
 			<Option target="ft_printf_new"/>
 		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/handle/string.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/handle/wchar.c">
 			<Option target="ft_printf_new"/>
 		</Unit>
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/helpers/buffer.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/helpers/wide_char.c">
 			<Option target="ft_printf_new"/>
 		</Unit>
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/parse/flags.c">

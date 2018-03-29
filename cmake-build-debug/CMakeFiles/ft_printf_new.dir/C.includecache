@@ -293,8 +293,6 @@ fcntl.h
 /home/astrielov/Documents/projects/ft_printf_new/src/handle/char.c
 ../../includes/ft_printf.h
 /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
-../../libft/libft.h
-/home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
 
 /home/astrielov/Documents/projects/ft_printf_new/src/handle/handle.c
 ../../includes/ft_printf.h
@@ -306,11 +304,21 @@ fcntl.h
 ../../includes/ft_printf.h
 /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
 
-/home/astrielov/Documents/projects/ft_printf_new/src/helpers/buffer.c
-../../libft/libft.h
-/home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
+/home/astrielov/Documents/projects/ft_printf_new/src/handle/string.c
 ../../includes/ft_printf.h
 /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
+../../libft/libft.h
+/home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
+
+/home/astrielov/Documents/projects/ft_printf_new/src/handle/wchar.c
+../../includes/ft_printf.h
+/home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
+
+/home/astrielov/Documents/projects/ft_printf_new/src/helpers/buffer.c
+../../includes/ft_printf.h
+/home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
+../../libft/libft.h
+/home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
 
 /home/astrielov/Documents/projects/ft_printf_new/src/parse/flags.c
 ../../includes/ft_printf.h

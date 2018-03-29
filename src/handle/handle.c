@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 11:03:43 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/28 18:06:14 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/03/28 22:27:53 by astrielov        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,8 @@ t_buff	*handle_argument(va_list va, t_pf *arg)
 		handle_number(arg, arg_buff, va_arg(va, uintmax_t));
 	else if (ft_strchr("cC", arg->specifier))
 		handle_char(arg, arg_buff, va_arg(va, wchar_t));
-//	else if (arg->specifier == 's')
-//		handle_string(arg, arg_buff, va_arg(va, char *));
-//	else if (arg->specifier == 'S')
-//		handle_wstring(arg, arg_buff, va_arg(va, wchar_t *));
+	else if (ft_strchr("sS", arg->specifier))
+		handle_string(arg, arg_buff, va_arg(va, wchar_t *));
 //	else if (arg->specifier == 'p')
 //		handle_pointer(arg, arg_buff, va_arg(va, uintmax_t));
 	else if (arg->specifier)

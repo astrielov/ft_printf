@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 17:54:36 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/28 22:21:49 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/03/28 22:22:25 by astrielov        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ void		handle_char(t_pf *arg, t_buff *arg_buff, wchar_t chr)
 	size_t	bytes;
 
 	bytes = wide_char_bytes(chr);
-//	if (arg->specifier == 'c' || arg->specifier == 'C')
-	char_pre_padding(arg, arg_buff, bytes);
+	if (arg->specifier == 'c' || arg->specifier == 'C')
+		char_pre_padding(arg, arg_buff, bytes);
 	fill_char(arg_buff, (unsigned int)chr, bytes);
-//	if (arg->specifier == 'c' || arg->specifier == 'C')
-	char_post_padding(arg, arg_buff, bytes);
+	if (arg->specifier == 'c' || arg->specifier == 'C')
+		char_post_padding(arg, arg_buff, bytes);
 }
