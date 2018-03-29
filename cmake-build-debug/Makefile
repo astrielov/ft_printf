@@ -2094,6 +2094,33 @@ src/handle/handle.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/handle.c.s
 .PHONY : src/handle/handle.c.s
 
+src/handle/integer.o: src/handle/integer.c.o
+
+.PHONY : src/handle/integer.o
+
+# target to build an object file
+src/handle/integer.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o
+.PHONY : src/handle/integer.c.o
+
+src/handle/integer.i: src/handle/integer.c.i
+
+.PHONY : src/handle/integer.i
+
+# target to preprocess a source file
+src/handle/integer.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/integer.c.i
+.PHONY : src/handle/integer.c.i
+
+src/handle/integer.s: src/handle/integer.c.s
+
+.PHONY : src/handle/integer.s
+
+# target to generate assembly for a file
+src/handle/integer.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/integer.c.s
+.PHONY : src/handle/integer.c.s
+
 src/handle/number.o: src/handle/number.c.o
 
 .PHONY : src/handle/number.o
@@ -2120,6 +2147,33 @@ src/handle/number.s: src/handle/number.c.s
 src/handle/number.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/number.c.s
 .PHONY : src/handle/number.c.s
+
+src/handle/pointer.o: src/handle/pointer.c.o
+
+.PHONY : src/handle/pointer.o
+
+# target to build an object file
+src/handle/pointer.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o
+.PHONY : src/handle/pointer.c.o
+
+src/handle/pointer.i: src/handle/pointer.c.i
+
+.PHONY : src/handle/pointer.i
+
+# target to preprocess a source file
+src/handle/pointer.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.i
+.PHONY : src/handle/pointer.c.i
+
+src/handle/pointer.s: src/handle/pointer.c.s
+
+.PHONY : src/handle/pointer.s
+
+# target to generate assembly for a file
+src/handle/pointer.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.s
+.PHONY : src/handle/pointer.c.s
 
 src/handle/string.o: src/handle/string.c.o
 
@@ -2174,6 +2228,33 @@ src/handle/wchar.s: src/handle/wchar.c.s
 src/handle/wchar.c.s:
 	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.s
 .PHONY : src/handle/wchar.c.s
+
+src/handle/wstring.o: src/handle/wstring.c.o
+
+.PHONY : src/handle/wstring.o
+
+# target to build an object file
+src/handle/wstring.c.o:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o
+.PHONY : src/handle/wstring.c.o
+
+src/handle/wstring.i: src/handle/wstring.c.i
+
+.PHONY : src/handle/wstring.i
+
+# target to preprocess a source file
+src/handle/wstring.c.i:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.i
+.PHONY : src/handle/wstring.c.i
+
+src/handle/wstring.s: src/handle/wstring.c.s
+
+.PHONY : src/handle/wstring.s
+
+# target to generate assembly for a file
+src/handle/wstring.c.s:
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.s
+.PHONY : src/handle/wstring.c.s
 
 src/helpers/buffer.o: src/helpers/buffer.c.o
 
@@ -2565,15 +2646,24 @@ help:
 	@echo "... src/handle/handle.o"
 	@echo "... src/handle/handle.i"
 	@echo "... src/handle/handle.s"
+	@echo "... src/handle/integer.o"
+	@echo "... src/handle/integer.i"
+	@echo "... src/handle/integer.s"
 	@echo "... src/handle/number.o"
 	@echo "... src/handle/number.i"
 	@echo "... src/handle/number.s"
+	@echo "... src/handle/pointer.o"
+	@echo "... src/handle/pointer.i"
+	@echo "... src/handle/pointer.s"
 	@echo "... src/handle/string.o"
 	@echo "... src/handle/string.i"
 	@echo "... src/handle/string.s"
 	@echo "... src/handle/wchar.o"
 	@echo "... src/handle/wchar.i"
 	@echo "... src/handle/wchar.s"
+	@echo "... src/handle/wstring.o"
+	@echo "... src/handle/wstring.i"
+	@echo "... src/handle/wstring.s"
 	@echo "... src/helpers/buffer.o"
 	@echo "... src/helpers/buffer.i"
 	@echo "... src/helpers/buffer.s"

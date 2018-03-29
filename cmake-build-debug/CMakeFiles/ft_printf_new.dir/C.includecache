@@ -300,7 +300,19 @@ fcntl.h
 ../../libft/libft.h
 /home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
 
+/home/astrielov/Documents/projects/ft_printf_new/src/handle/integer.c
+../../includes/ft_printf.h
+/home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
+../../libft/libft.h
+/home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
+
 /home/astrielov/Documents/projects/ft_printf_new/src/handle/number.c
+../../includes/ft_printf.h
+/home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
+../../libft/libft.h
+/home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
+
+/home/astrielov/Documents/projects/ft_printf_new/src/handle/pointer.c
 ../../includes/ft_printf.h
 /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
 
@@ -311,6 +323,10 @@ fcntl.h
 /home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
 
 /home/astrielov/Documents/projects/ft_printf_new/src/handle/wchar.c
+../../includes/ft_printf.h
+/home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
+
+/home/astrielov/Documents/projects/ft_printf_new/src/handle/wstring.c
 ../../includes/ft_printf.h
 /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
 

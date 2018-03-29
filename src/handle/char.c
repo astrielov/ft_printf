@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 17:54:36 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/28 22:22:25 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/03/29 13:08:20 by astrielov        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,27 @@
 void		char_pre_padding(t_pf *arg, t_buff *arg_buff, size_t bytes)
 {
 	while (!(arg->flags & FLAG_MINUS) && (arg->width)-- > bytes)
+	{
+		if (arg_buff->index >= arg_buff->size)
+			buff_realloc(arg_buff);
 		(arg_buff->buff)[arg_buff->index++] = ' ';
+	}
 }
 
 void		char_post_padding(t_pf *arg, t_buff *arg_buff, size_t bytes)
 {
 	while ((arg->flags & FLAG_MINUS) && (arg->width)-- > bytes)
+	{
+		if (arg_buff->index >= arg_buff->size)
+			buff_realloc(arg_buff);
 		(arg_buff->buff)[arg_buff->index++] = ' ';
+	}
 }
 
 void		fill_char(t_buff *arg_buff, unsigned int chr, size_t bytes)
 {
+	if (arg_buff->index + 4 >= arg_buff->size)
+		buff_realloc(arg_buff);
 	if (bytes == 1)
 		one_byte(arg_buff, chr);
 	else if (bytes == 2)

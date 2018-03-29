@@ -345,9 +345,81 @@ CMakeFiles/ft_printf_new.dir/src/handle/string.c.o.provides: CMakeFiles/ft_print
 CMakeFiles/ft_printf_new.dir/src/handle/string.c.o.provides.build: CMakeFiles/ft_printf_new.dir/src/handle/string.c.o
 
 
+CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o: CMakeFiles/ft_printf_new.dir/flags.make
+CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o: ../src/handle/pointer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/src/handle/pointer.c
+
+CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/astrielov/Documents/projects/ft_printf_new/src/handle/pointer.c > CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.i
+
+CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/astrielov/Documents/projects/ft_printf_new/src/handle/pointer.c -o CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.s
+
+CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o.requires:
+
+.PHONY : CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o.requires
+
+CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o.provides: CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o.provides.build
+.PHONY : CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o.provides
+
+CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o.provides.build: CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o
+
+
+CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o: CMakeFiles/ft_printf_new.dir/flags.make
+CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o: ../src/handle/wstring.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/src/handle/wstring.c
+
+CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/astrielov/Documents/projects/ft_printf_new/src/handle/wstring.c > CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.i
+
+CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/astrielov/Documents/projects/ft_printf_new/src/handle/wstring.c -o CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.s
+
+CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o.requires:
+
+.PHONY : CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o.requires
+
+CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o.provides: CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o.provides.build
+.PHONY : CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o.provides
+
+CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o.provides.build: CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o
+
+
+CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o: CMakeFiles/ft_printf_new.dir/flags.make
+CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o: ../src/handle/integer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/src/handle/integer.c
+
+CMakeFiles/ft_printf_new.dir/src/handle/integer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ft_printf_new.dir/src/handle/integer.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/astrielov/Documents/projects/ft_printf_new/src/handle/integer.c > CMakeFiles/ft_printf_new.dir/src/handle/integer.c.i
+
+CMakeFiles/ft_printf_new.dir/src/handle/integer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ft_printf_new.dir/src/handle/integer.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/astrielov/Documents/projects/ft_printf_new/src/handle/integer.c -o CMakeFiles/ft_printf_new.dir/src/handle/integer.c.s
+
+CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o.requires:
+
+.PHONY : CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o.requires
+
+CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o.provides: CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o.requires
+	$(MAKE) -f CMakeFiles/ft_printf_new.dir/build.make CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o.provides.build
+.PHONY : CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o.provides
+
+CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o.provides.build: CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o
+
+
 CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_atoi.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.i: cmake_force
@@ -371,7 +443,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.o.provides.build: CMakeFiles/ft_pri
 
 CMakeFiles/ft_printf_new.dir/libft/ft_bzero.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_bzero.c.o: ../libft/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_bzero.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_bzero.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_bzero.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_bzero.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_bzero.c.i: cmake_force
@@ -395,7 +467,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_bzero.c.o.provides.build: CMakeFiles/ft_pr
 
 CMakeFiles/ft_printf_new.dir/libft/ft_d_bblsort.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_d_bblsort.c.o: ../libft/ft_d_bblsort.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_d_bblsort.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_d_bblsort.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_d_bblsort.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_d_bblsort.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_d_bblsort.c.i: cmake_force
@@ -419,7 +491,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_d_bblsort.c.o.provides.build: CMakeFiles/f
 
 CMakeFiles/ft_printf_new.dir/libft/ft_d_minind.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_d_minind.c.o: ../libft/ft_d_minind.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_d_minind.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_d_minind.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_d_minind.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_d_minind.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_d_minind.c.i: cmake_force
@@ -443,7 +515,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_d_minind.c.o.provides.build: CMakeFiles/ft
 
 CMakeFiles/ft_printf_new.dir/libft/ft_d_sqrt.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_d_sqrt.c.o: ../libft/ft_d_sqrt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_d_sqrt.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_d_sqrt.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_d_sqrt.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_d_sqrt.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_d_sqrt.c.i: cmake_force
@@ -467,7 +539,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_d_sqrt.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_errmsg.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_errmsg.c.o: ../libft/ft_errmsg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_errmsg.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_errmsg.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_errmsg.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_errmsg.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_errmsg.c.i: cmake_force
@@ -491,7 +563,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_errmsg.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_gnl.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_gnl.c.o: ../libft/ft_gnl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_gnl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_gnl.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_gnl.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_gnl.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_gnl.c.i: cmake_force
@@ -515,7 +587,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_gnl.c.o.provides.build: CMakeFiles/ft_prin
 
 CMakeFiles/ft_printf_new.dir/libft/ft_isalnum.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_isalnum.c.o: ../libft/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_isalnum.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_isalnum.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_isalnum.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_isalnum.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_isalnum.c.i: cmake_force
@@ -539,7 +611,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_isalnum.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_isalpha.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_isalpha.c.o: ../libft/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_isalpha.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_isalpha.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_isalpha.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_isalpha.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_isalpha.c.i: cmake_force
@@ -563,7 +635,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_isalpha.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_isascii.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_isascii.c.o: ../libft/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_isascii.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_isascii.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_isascii.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_isascii.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_isascii.c.i: cmake_force
@@ -587,7 +659,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_isascii.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_isdigit.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_isdigit.c.o: ../libft/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_isdigit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_isdigit.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_isdigit.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_isdigit.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_isdigit.c.i: cmake_force
@@ -611,7 +683,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_isdigit.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_isprint.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_isprint.c.o: ../libft/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_isprint.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_isprint.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_isprint.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_isprint.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_isprint.c.i: cmake_force
@@ -635,7 +707,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_isprint.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_itoa.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_itoa.c.o: ../libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_itoa.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_itoa.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_itoa.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_itoa.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_itoa.c.i: cmake_force
@@ -659,7 +731,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_itoa.c.o.provides.build: CMakeFiles/ft_pri
 
 CMakeFiles/ft_printf_new.dir/libft/ft_lf_pow.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_lf_pow.c.o: ../libft/ft_lf_pow.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_lf_pow.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_lf_pow.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_lf_pow.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_lf_pow.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_lf_pow.c.i: cmake_force
@@ -683,7 +755,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_lf_pow.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_ll_fact.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_ll_fact.c.o: ../libft/ft_ll_fact.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_ll_fact.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_ll_fact.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_ll_fact.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_ll_fact.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_ll_fact.c.i: cmake_force
@@ -707,7 +779,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_ll_fact.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_lstadd.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_lstadd.c.o: ../libft/ft_lstadd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_lstadd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_lstadd.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_lstadd.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_lstadd.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_lstadd.c.i: cmake_force
@@ -731,7 +803,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_lstadd.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_lstdel.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_lstdel.c.o: ../libft/ft_lstdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_lstdel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_lstdel.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_lstdel.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_lstdel.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_lstdel.c.i: cmake_force
@@ -755,7 +827,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_lstdel.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_lstdelone.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_lstdelone.c.o: ../libft/ft_lstdelone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_lstdelone.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_lstdelone.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_lstdelone.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_lstdelone.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_lstdelone.c.i: cmake_force
@@ -779,7 +851,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_lstdelone.c.o.provides.build: CMakeFiles/f
 
 CMakeFiles/ft_printf_new.dir/libft/ft_lstiter.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_lstiter.c.o: ../libft/ft_lstiter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_lstiter.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_lstiter.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_lstiter.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_lstiter.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_lstiter.c.i: cmake_force
@@ -803,7 +875,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_lstiter.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_lstmap.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_lstmap.c.o: ../libft/ft_lstmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_lstmap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_lstmap.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_lstmap.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_lstmap.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_lstmap.c.i: cmake_force
@@ -827,7 +899,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_lstmap.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_lstnew.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_lstnew.c.o: ../libft/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_lstnew.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_lstnew.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_lstnew.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_lstnew.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_lstnew.c.i: cmake_force
@@ -851,7 +923,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_lstnew.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memalloc.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_memalloc.c.o: ../libft/ft_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memalloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memalloc.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_memalloc.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_memalloc.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memalloc.c.i: cmake_force
@@ -875,7 +947,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_memalloc.c.o.provides.build: CMakeFiles/ft
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memccpy.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_memccpy.c.o: ../libft/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memccpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memccpy.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_memccpy.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_memccpy.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memccpy.c.i: cmake_force
@@ -899,7 +971,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_memccpy.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memchr.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_memchr.c.o: ../libft/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memchr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_memchr.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_memchr.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memchr.c.i: cmake_force
@@ -923,7 +995,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_memchr.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memcmp.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_memcmp.c.o: ../libft/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memcmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memcmp.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_memcmp.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_memcmp.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memcmp.c.i: cmake_force
@@ -947,7 +1019,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_memcmp.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memcpy.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_memcpy.c.o: ../libft/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memcpy.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_memcpy.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_memcpy.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memcpy.c.i: cmake_force
@@ -971,7 +1043,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_memcpy.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memdel.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_memdel.c.o: ../libft/ft_memdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memdel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memdel.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_memdel.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_memdel.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memdel.c.i: cmake_force
@@ -995,7 +1067,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_memdel.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memmove.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_memmove.c.o: ../libft/ft_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memmove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memmove.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_memmove.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_memmove.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memmove.c.i: cmake_force
@@ -1019,7 +1091,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_memmove.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memset.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_memset.c.o: ../libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memset.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_memset.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_memset.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_memset.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_memset.c.i: cmake_force
@@ -1043,7 +1115,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_memset.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putchar.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_putchar.c.o: ../libft/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putchar.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putchar.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_putchar.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_putchar.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putchar.c.i: cmake_force
@@ -1067,7 +1139,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_putchar.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putchar_fd.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_putchar_fd.c.o: ../libft/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putchar_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putchar_fd.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_putchar_fd.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_putchar_fd.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putchar_fd.c.i: cmake_force
@@ -1091,7 +1163,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_putchar_fd.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putendl.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_putendl.c.o: ../libft/ft_putendl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putendl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putendl.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_putendl.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_putendl.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putendl.c.i: cmake_force
@@ -1115,7 +1187,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_putendl.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putendl_fd.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_putendl_fd.c.o: ../libft/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putendl_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putendl_fd.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_putendl_fd.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_putendl_fd.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putendl_fd.c.i: cmake_force
@@ -1139,7 +1211,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_putendl_fd.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putnbr.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_putnbr.c.o: ../libft/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putnbr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putnbr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_putnbr.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_putnbr.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putnbr.c.i: cmake_force
@@ -1163,7 +1235,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_putnbr.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putnbr_fd.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_putnbr_fd.c.o: ../libft/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putnbr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putnbr_fd.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_putnbr_fd.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_putnbr_fd.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putnbr_fd.c.i: cmake_force
@@ -1187,7 +1259,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_putnbr_fd.c.o.provides.build: CMakeFiles/f
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putnstr.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_putnstr.c.o: ../libft/ft_putnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putnstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putnstr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_putnstr.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_putnstr.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putnstr.c.i: cmake_force
@@ -1211,7 +1283,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_putnstr.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putstr.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_putstr.c.o: ../libft/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putstr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_putstr.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_putstr.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putstr.c.i: cmake_force
@@ -1235,7 +1307,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_putstr.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putstr_fd.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_putstr_fd.c.o: ../libft/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putstr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_putstr_fd.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_putstr_fd.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_putstr_fd.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_putstr_fd.c.i: cmake_force
@@ -1259,7 +1331,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_putstr_fd.c.o.provides.build: CMakeFiles/f
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strcat.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strcat.c.o: ../libft/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strcat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strcat.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strcat.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strcat.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strcat.c.i: cmake_force
@@ -1283,7 +1355,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strcat.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strchr.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strchr.c.o: ../libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strchr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strchr.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strchr.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strchr.c.i: cmake_force
@@ -1307,7 +1379,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strchr.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strclr.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strclr.c.o: ../libft/ft_strclr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strclr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strclr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strclr.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strclr.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strclr.c.i: cmake_force
@@ -1331,7 +1403,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strclr.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strcmp.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strcmp.c.o: ../libft/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strcmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strcmp.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strcmp.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strcmp.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strcmp.c.i: cmake_force
@@ -1355,7 +1427,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strcmp.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strcpy.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strcpy.c.o: ../libft/ft_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strcpy.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strcpy.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strcpy.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strcpy.c.i: cmake_force
@@ -1379,7 +1451,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strcpy.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strdel.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strdel.c.o: ../libft/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strdel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strdel.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strdel.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strdel.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strdel.c.i: cmake_force
@@ -1403,7 +1475,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strdel.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strdup.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strdup.c.o: ../libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strdup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strdup.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strdup.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strdup.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strdup.c.i: cmake_force
@@ -1427,7 +1499,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strdup.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strequ.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strequ.c.o: ../libft/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strequ.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strequ.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strequ.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strequ.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strequ.c.i: cmake_force
@@ -1451,7 +1523,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strequ.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_striter.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_striter.c.o: ../libft/ft_striter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_striter.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_striter.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_striter.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_striter.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_striter.c.i: cmake_force
@@ -1475,7 +1547,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_striter.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_striteri.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_striteri.c.o: ../libft/ft_striteri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_striteri.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_striteri.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_striteri.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_striteri.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_striteri.c.i: cmake_force
@@ -1499,7 +1571,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_striteri.c.o.provides.build: CMakeFiles/ft
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strjoin.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strjoin.c.o: ../libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strjoin.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strjoin.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strjoin.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strjoin.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strjoin.c.i: cmake_force
@@ -1523,7 +1595,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strjoin.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strlcat.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strlcat.c.o: ../libft/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strlcat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strlcat.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strlcat.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strlcat.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strlcat.c.i: cmake_force
@@ -1547,7 +1619,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strlcat.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strlen.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strlen.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strlen.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strlen.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strlen.c.i: cmake_force
@@ -1571,7 +1643,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strlen.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strmap.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strmap.c.o: ../libft/ft_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strmap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strmap.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strmap.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strmap.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strmap.c.i: cmake_force
@@ -1595,7 +1667,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strmap.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strmapi.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strmapi.c.o: ../libft/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strmapi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strmapi.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strmapi.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strmapi.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strmapi.c.i: cmake_force
@@ -1619,7 +1691,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strmapi.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strncat.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strncat.c.o: ../libft/ft_strncat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strncat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strncat.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strncat.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strncat.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strncat.c.i: cmake_force
@@ -1643,7 +1715,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strncat.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strncmp.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strncmp.c.o: ../libft/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strncmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strncmp.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strncmp.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strncmp.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strncmp.c.i: cmake_force
@@ -1667,7 +1739,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strncmp.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strncpy.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strncpy.c.o: ../libft/ft_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strncpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strncpy.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strncpy.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strncpy.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strncpy.c.i: cmake_force
@@ -1691,7 +1763,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strncpy.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strnequ.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strnequ.c.o: ../libft/ft_strnequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strnequ.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strnequ.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strnequ.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strnequ.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strnequ.c.i: cmake_force
@@ -1715,7 +1787,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strnequ.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strnew.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strnew.c.o: ../libft/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strnew.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strnew.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strnew.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strnew.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strnew.c.i: cmake_force
@@ -1739,7 +1811,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strnew.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strnstr.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strnstr.c.o: ../libft/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strnstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strnstr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strnstr.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strnstr.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strnstr.c.i: cmake_force
@@ -1763,7 +1835,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strnstr.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strpbrk.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strpbrk.c.o: ../libft/ft_strpbrk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strpbrk.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strpbrk.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strpbrk.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strpbrk.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strpbrk.c.i: cmake_force
@@ -1787,7 +1859,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strpbrk.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strrchr.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strrchr.c.o: ../libft/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strrchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strrchr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strrchr.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strrchr.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strrchr.c.i: cmake_force
@@ -1811,7 +1883,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strrchr.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strsplit.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strsplit.c.o: ../libft/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strsplit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strsplit.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strsplit.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strsplit.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strsplit.c.i: cmake_force
@@ -1835,7 +1907,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strsplit.c.o.provides.build: CMakeFiles/ft
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strstr.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strstr.c.o: ../libft/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strstr.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strstr.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strstr.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strstr.c.i: cmake_force
@@ -1859,7 +1931,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strstr.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strsub.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strsub.c.o: ../libft/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strsub.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strsub.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strsub.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strsub.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strsub.c.i: cmake_force
@@ -1883,7 +1955,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strsub.c.o.provides.build: CMakeFiles/ft_p
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strtolow.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strtolow.c.o: ../libft/ft_strtolow.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strtolow.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strtolow.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strtolow.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strtolow.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strtolow.c.i: cmake_force
@@ -1907,7 +1979,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strtolow.c.o.provides.build: CMakeFiles/ft
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strtoupp.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strtoupp.c.o: ../libft/ft_strtoupp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strtoupp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strtoupp.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strtoupp.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strtoupp.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strtoupp.c.i: cmake_force
@@ -1931,7 +2003,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strtoupp.c.o.provides.build: CMakeFiles/ft
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strtrim.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_strtrim.c.o: ../libft/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strtrim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_strtrim.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_strtrim.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_strtrim.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_strtrim.c.i: cmake_force
@@ -1955,7 +2027,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_strtrim.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_tolower.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_tolower.c.o: ../libft/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_tolower.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_tolower.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_tolower.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_tolower.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_tolower.c.i: cmake_force
@@ -1979,7 +2051,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_tolower.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/libft/ft_toupper.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/libft/ft_toupper.c.o: ../libft/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_toupper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/ft_printf_new.dir/libft/ft_toupper.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/libft/ft_toupper.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/libft/ft_toupper.c
 
 CMakeFiles/ft_printf_new.dir/libft/ft_toupper.c.i: cmake_force
@@ -2003,7 +2075,7 @@ CMakeFiles/ft_printf_new.dir/libft/ft_toupper.c.o.provides.build: CMakeFiles/ft_
 
 CMakeFiles/ft_printf_new.dir/debug_print_pf.c.o: CMakeFiles/ft_printf_new.dir/flags.make
 CMakeFiles/ft_printf_new.dir/debug_print_pf.c.o: ../debug_print_pf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/ft_printf_new.dir/debug_print_pf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/ft_printf_new.dir/debug_print_pf.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ft_printf_new.dir/debug_print_pf.c.o   -c /home/astrielov/Documents/projects/ft_printf_new/debug_print_pf.c
 
 CMakeFiles/ft_printf_new.dir/debug_print_pf.c.i: cmake_force
@@ -2039,6 +2111,9 @@ ft_printf_new_OBJECTS = \
 "CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.o" \
 "CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o" \
 "CMakeFiles/ft_printf_new.dir/src/handle/string.c.o" \
+"CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o" \
+"CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o" \
+"CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o" \
 "CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.o" \
 "CMakeFiles/ft_printf_new.dir/libft/ft_bzero.c.o" \
 "CMakeFiles/ft_printf_new.dir/libft/ft_d_bblsort.c.o" \
@@ -2125,6 +2200,9 @@ libft_printf_new.a: CMakeFiles/ft_printf_new.dir/src/handle/char.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/src/handle/string.c.o
+libft_printf_new.a: CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o
+libft_printf_new.a: CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o
+libft_printf_new.a: CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/libft/ft_bzero.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/libft/ft_d_bblsort.c.o
@@ -2197,7 +2275,7 @@ libft_printf_new.a: CMakeFiles/ft_printf_new.dir/libft/ft_toupper.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/debug_print_pf.c.o
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/build.make
 libft_printf_new.a: CMakeFiles/ft_printf_new.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Linking C static library libft_printf_new.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/astrielov/Documents/projects/ft_printf_new/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Linking C static library libft_printf_new.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/ft_printf_new.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ft_printf_new.dir/link.txt --verbose=$(VERBOSE)
 
@@ -2218,6 +2296,9 @@ CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/src/handle/c
 CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.o.requires
 CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o.requires
 CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/src/handle/string.c.o.requires
+CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o.requires
+CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o.requires
+CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o.requires
 CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/libft/ft_atoi.c.o.requires
 CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/libft/ft_bzero.c.o.requires
 CMakeFiles/ft_printf_new.dir/requires: CMakeFiles/ft_printf_new.dir/libft/ft_d_bblsort.c.o.requires

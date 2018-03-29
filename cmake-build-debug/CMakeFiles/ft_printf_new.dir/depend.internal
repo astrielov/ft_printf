@@ -209,9 +209,17 @@ CMakeFiles/ft_printf_new.dir/src/handle/handle.c.o
  /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
  /home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
  /home/astrielov/Documents/projects/ft_printf_new/src/handle/handle.c
+CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o
+ /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
+ /home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
+ /home/astrielov/Documents/projects/ft_printf_new/src/handle/integer.c
 CMakeFiles/ft_printf_new.dir/src/handle/number.c.o
  /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
+ /home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
  /home/astrielov/Documents/projects/ft_printf_new/src/handle/number.c
+CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o
+ /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
+ /home/astrielov/Documents/projects/ft_printf_new/src/handle/pointer.c
 CMakeFiles/ft_printf_new.dir/src/handle/string.c.o
  /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
  /home/astrielov/Documents/projects/ft_printf_new/libft/libft.h
@@ -219,6 +227,9 @@ CMakeFiles/ft_printf_new.dir/src/handle/string.c.o
 CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o
  /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
  /home/astrielov/Documents/projects/ft_printf_new/src/handle/wchar.c
+CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o
+ /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
+ /home/astrielov/Documents/projects/ft_printf_new/src/handle/wstring.c
 CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.o
  /home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h
  /home/astrielov/Documents/projects/ft_printf_new/libft/libft.h

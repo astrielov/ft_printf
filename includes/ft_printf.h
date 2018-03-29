@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/27 16:32:38 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/28 22:29:00 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/03/29 14:36:44 by astrielov        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 
+#define BASE_STRING					"0123456789abcdef"
 #define FLAG_ZERO						(1 << 0)
 #define FLAG_MINUS					(1 << 1)
 #define FLAG_PLUS						(1 << 2)
@@ -41,6 +42,7 @@ typedef struct 		s_pf
 	unsigned int		precision;
 	unsigned int		length;
 	unsigned int		base;
+	unsigned int		nbr_is_negative;
 	char 						specifier;
 }									t_pf;
 
@@ -61,13 +63,14 @@ void							parse_flags(char **format, t_pf *arg);
 void							parse_width(char **format, va_list va, t_pf *arg);
 void							parse_precision(char **format, va_list va, t_pf *arg);
 void							parse_length(char **format, t_pf *arg);
-void							parse_specifier(char **format, t_pf *pf);
+//void							parse_specifier(char **format, t_pf *pf);
 
 
 t_buff						*handle_argument(va_list va, t_pf *pf);
 void							handle_number(t_pf *arg, t_buff *arg_buff, uintmax_t nbr);
 void							handle_char(t_pf *arg, t_buff *arg_buff, wchar_t chr);
 void							handle_string(t_pf *arg, t_buff *arg_buff, wchar_t *str);
+void							handle_pointer(t_pf *arg, t_buff *arg_buff, size_t nbr);
 
 
 void							buff_realloc(t_buff *buff);
@@ -79,6 +82,12 @@ void							one_byte(t_buff *arg_buff, unsigned int chr);
 void							two_bytes(t_buff *arg_buff, unsigned int chr);
 void							three_bytes(t_buff *arg_buff, unsigned int chr);
 void							four_bytes(t_buff *arg_buff, unsigned int chr);
+
+void							prepare_string_arg(t_pf *arg);
+size_t 						wstr_bytes_to_print(t_pf *arg, wchar_t *str);
+void							fill_wide_str(t_pf *arg, t_buff *arg_buff, wchar_t *str, size_t str_bytes);
+
+char							*stringify_nbr(t_pf *arg, uintmax_t nbr);
 
 
 void							debug_print_pf(t_pf *arg);

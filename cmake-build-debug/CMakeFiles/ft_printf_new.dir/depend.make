@@ -209,8 +209,16 @@ CMakeFiles/ft_printf_new.dir/src/handle/handle.c.o: ../includes/ft_printf.h
 CMakeFiles/ft_printf_new.dir/src/handle/handle.c.o: ../libft/libft.h
 CMakeFiles/ft_printf_new.dir/src/handle/handle.c.o: ../src/handle/handle.c
 
+CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o: ../includes/ft_printf.h
+CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o: ../libft/libft.h
+CMakeFiles/ft_printf_new.dir/src/handle/integer.c.o: ../src/handle/integer.c
+
 CMakeFiles/ft_printf_new.dir/src/handle/number.c.o: ../includes/ft_printf.h
+CMakeFiles/ft_printf_new.dir/src/handle/number.c.o: ../libft/libft.h
 CMakeFiles/ft_printf_new.dir/src/handle/number.c.o: ../src/handle/number.c
+
+CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o: ../includes/ft_printf.h
+CMakeFiles/ft_printf_new.dir/src/handle/pointer.c.o: ../src/handle/pointer.c
 
 CMakeFiles/ft_printf_new.dir/src/handle/string.c.o: ../includes/ft_printf.h
 CMakeFiles/ft_printf_new.dir/src/handle/string.c.o: ../libft/libft.h
@@ -218,6 +226,9 @@ CMakeFiles/ft_printf_new.dir/src/handle/string.c.o: ../src/handle/string.c
 
 CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o: ../includes/ft_printf.h
 CMakeFiles/ft_printf_new.dir/src/handle/wchar.c.o: ../src/handle/wchar.c
+
+CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o: ../includes/ft_printf.h
+CMakeFiles/ft_printf_new.dir/src/handle/wstring.c.o: ../src/handle/wstring.c
 
 CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.o: ../includes/ft_printf.h
 CMakeFiles/ft_printf_new.dir/src/helpers/buffer.c.o: ../libft/libft.h
