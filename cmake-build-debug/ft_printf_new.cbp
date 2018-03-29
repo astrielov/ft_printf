@@ -86,216 +86,6 @@
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/includes/ft_printf.h">
 			<Option target="ft_printf_new"/>
 		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_atoi.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_bzero.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_d_bblsort.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_d_minind.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_d_sqrt.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_errmsg.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_gnl.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_isalnum.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_isalpha.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_isascii.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_isdigit.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_isprint.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_itoa.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_lf_pow.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_ll_fact.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_lstadd.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_lstdel.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_lstdelone.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_lstiter.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_lstmap.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_lstnew.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_memalloc.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_memccpy.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_memchr.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_memcmp.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_memcpy.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_memdel.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_memmove.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_memset.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putchar.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putchar_fd.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putendl.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putendl_fd.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putnbr.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putnbr_fd.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putnstr.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putstr.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_putstr_fd.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strcat.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strchr.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strclr.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strcmp.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strcpy.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strdel.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strdup.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strequ.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_striter.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_striteri.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strjoin.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strlcat.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strlen.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strmap.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strmapi.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strncat.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strncmp.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strncpy.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strnequ.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strnew.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strnstr.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strpbrk.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strrchr.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strsplit.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strstr.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strsub.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strtolow.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strtoupp.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_strtrim.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_tolower.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/ft_toupper.c">
-			<Option target="ft_printf_new"/>
-		</Unit>
-		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/libft/libft.h">
-			<Option target="ft_printf_new"/>
-		</Unit>
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/ft_printf.c">
 			<Option target="ft_printf_new"/>
 		</Unit>
@@ -324,6 +114,216 @@
 			<Option target="ft_printf_new"/>
 		</Unit>
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/helpers/buffer.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_atoi.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_bzero.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_d_bblsort.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_d_minind.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_d_sqrt.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_errmsg.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_gnl.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_isalnum.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_isalpha.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_isascii.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_isdigit.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_isprint.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_itoa.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_lf_pow.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_ll_fact.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_lstadd.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_lstdel.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_lstdelone.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_lstiter.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_lstmap.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_lstnew.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_memalloc.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_memccpy.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_memchr.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_memcmp.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_memcpy.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_memdel.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_memmove.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_memset.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_putchar.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_putchar_fd.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_putendl.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_putendl_fd.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_putnbr.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_putnbr_fd.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_putnstr.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_putstr.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_putstr_fd.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strcat.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strchr.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strclr.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strcmp.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strcpy.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strdel.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strdup.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strequ.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_striter.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_striteri.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strjoin.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strlcat.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strlen.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strmap.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strmapi.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strncat.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strncmp.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strncpy.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strnequ.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strnew.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strnstr.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strpbrk.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strrchr.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strsplit.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strstr.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strsub.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strtolow.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strtoupp.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_strtrim.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_tolower.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/ft_toupper.c">
+			<Option target="ft_printf_new"/>
+		</Unit>
+		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/libft/libft.h">
 			<Option target="ft_printf_new"/>
 		</Unit>
 		<Unit filename="/home/astrielov/Documents/projects/ft_printf_new/src/parse/flags.c">

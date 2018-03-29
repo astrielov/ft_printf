@@ -3,3 +3,13 @@ exe
 
 
 a\.out
+
+libft/obj/
+
+libft/libft\.a
+
+obj/
+
+libft\.a
+
+libftprintf\.a

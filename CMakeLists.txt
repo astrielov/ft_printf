@@ -4,88 +4,96 @@ project(ft_printf_new)
 set(CMAKE_C_STANDARD 99)
 
 set(LIBFT
-        libft/ft_atoi.c
-        libft/ft_bzero.c
-        libft/ft_d_bblsort.c
-        libft/ft_d_minind.c
-        libft/ft_d_sqrt.c
-        libft/ft_errmsg.c
-        libft/ft_gnl.c
-        libft/ft_isalnum.c
-        libft/ft_isalpha.c
-        libft/ft_isascii.c
-        libft/ft_isdigit.c
-        libft/ft_isprint.c
-        libft/ft_itoa.c
-        libft/ft_lf_pow.c
-        libft/ft_ll_fact.c
-        libft/ft_lstadd.c
-        libft/ft_lstdel.c
-        libft/ft_lstdelone.c
-        libft/ft_lstiter.c
-        libft/ft_lstmap.c
-        libft/ft_lstnew.c
-        libft/ft_memalloc.c
-        libft/ft_memccpy.c
-        libft/ft_memchr.c
-        libft/ft_memcmp.c
-        libft/ft_memcpy.c
-        libft/ft_memdel.c
-        libft/ft_memmove.c
-        libft/ft_memset.c
-        libft/ft_putchar.c
-        libft/ft_putchar_fd.c
-        libft/ft_putendl.c
-        libft/ft_putendl_fd.c
-        libft/ft_putnbr.c
-        libft/ft_putnbr_fd.c
-        libft/ft_putnstr.c
-        libft/ft_putstr.c
-        libft/ft_putstr_fd.c
-        libft/ft_strcat.c
-        libft/ft_strchr.c
-        libft/ft_strclr.c
-        libft/ft_strcmp.c
-        libft/ft_strcpy.c
-        libft/ft_strdel.c
-        libft/ft_strdup.c
-        libft/ft_strequ.c
-        libft/ft_striter.c
-        libft/ft_striteri.c
-        libft/ft_strjoin.c
-        libft/ft_strlcat.c
-        libft/ft_strlen.c
-        libft/ft_strmap.c
-        libft/ft_strmapi.c
-        libft/ft_strncat.c
-        libft/ft_strncmp.c
-        libft/ft_strncpy.c
-        libft/ft_strnequ.c
-        libft/ft_strnew.c
-        libft/ft_strnstr.c
-        libft/ft_strpbrk.c
-        libft/ft_strrchr.c
-        libft/ft_strsplit.c
-        libft/ft_strstr.c
-        libft/ft_strsub.c
-        libft/ft_strtolow.c
-        libft/ft_strtoupp.c
-        libft/ft_strtrim.c
-        libft/ft_tolower.c
-        libft/ft_toupper.c
-        libft/libft.h
+        src/libft/ft_atoi.c
+        src/libft/ft_bzero.c
+        src/libft/ft_d_bblsort.c
+        src/libft/ft_d_minind.c
+        src/libft/ft_d_sqrt.c
+        src/libft/ft_errmsg.c
+        src/libft/ft_gnl.c
+        src/libft/ft_isalnum.c
+        src/libft/ft_isalpha.c
+        src/libft/ft_isascii.c
+        src/libft/ft_isdigit.c
+        src/libft/ft_isprint.c
+        src/libft/ft_itoa.c
+        src/libft/ft_lf_pow.c
+        src/libft/ft_ll_fact.c
+        src/libft/ft_lstadd.c
+        src/libft/ft_lstdel.c
+        src/libft/ft_lstdelone.c
+        src/libft/ft_lstiter.c
+        src/libft/ft_lstmap.c
+        src/libft/ft_lstnew.c
+        src/libft/ft_memalloc.c
+        src/libft/ft_memccpy.c
+        src/libft/ft_memchr.c
+        src/libft/ft_memcmp.c
+        src/libft/ft_memcpy.c
+        src/libft/ft_memdel.c
+        src/libft/ft_memmove.c
+        src/libft/ft_memset.c
+        src/libft/ft_putchar.c
+        src/libft/ft_putchar_fd.c
+        src/libft/ft_putendl.c
+        src/libft/ft_putendl_fd.c
+        src/libft/ft_putnbr.c
+        src/libft/ft_putnbr_fd.c
+        src/libft/ft_putnstr.c
+        src/libft/ft_putstr.c
+        src/libft/ft_putstr_fd.c
+        src/libft/ft_strcat.c
+        src/libft/ft_strchr.c
+        src/libft/ft_strclr.c
+        src/libft/ft_strcmp.c
+        src/libft/ft_strcpy.c
+        src/libft/ft_strdel.c
+        src/libft/ft_strdup.c
+        src/libft/ft_strequ.c
+        src/libft/ft_striter.c
+        src/libft/ft_striteri.c
+        src/libft/ft_strjoin.c
+        src/libft/ft_strlcat.c
+        src/libft/ft_strlen.c
+        src/libft/ft_strmap.c
+        src/libft/ft_strmapi.c
+        src/libft/ft_strncat.c
+        src/libft/ft_strncmp.c
+        src/libft/ft_strncpy.c
+        src/libft/ft_strnequ.c
+        src/libft/ft_strnew.c
+        src/libft/ft_strnstr.c
+        src/libft/ft_strpbrk.c
+        src/libft/ft_strrchr.c
+        src/libft/ft_strsplit.c
+        src/libft/ft_strstr.c
+        src/libft/ft_strsub.c
+        src/libft/ft_strtolow.c
+        src/libft/ft_strtoupp.c
+        src/libft/ft_strtrim.c
+        src/libft/ft_tolower.c
+        src/libft/ft_toupper.c
+        src/libft/libft.h
         )
 
 set(FT_PRINTF_NEW
-        src/ft_printf.c
         includes/ft_printf.h
+        src/ft_printf.c
         src/parse/flags.c
         src/parse/parse.c
         src/parse/width.c
         src/parse/precision.c
         src/parse/length.c
         src/handle/handle.c
-        src/handle/number.c src/handle/char.c src/helpers/buffer.c src/handle/wchar.c src/handle/string.c src/handle/pointer.c src/handle/wstring.c src/handle/integer.c)
+        src/handle/number.c
+        src/handle/char.c
+        src/helpers/buffer.c
+        src/handle/wchar.c
+        src/handle/string.c
+        src/handle/pointer.c
+        src/handle/wstring.c
+        src/handle/integer.c
+        )
 
 add_library(ft_printf_new
         ${FT_PRINTF_NEW}

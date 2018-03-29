@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 17:34:17 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/29 17:18:14 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/03/29 21:06:59 by astrielov        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,19 +38,21 @@ void		prepare_number_arg(t_pf *arg)
 
 void	pre_padding_number(t_pf *arg, t_buff *arg_buff, size_t nbr_len)
 {
+	arg += 0; arg_buff += 0; nbr_len += 0;
 	if (arg->nbr_is_negative)
 		(arg_buff->buff)[arg_buff->index++] = '-';
 }
 
 void	fill_number(t_pf *arg, t_buff *arg_buff, char *nbr_str, size_t nbr_len)
 {
+	arg += 0; arg_buff += 0; nbr_len += 0;
 	while (*nbr_str)
 		(arg_buff->buff)[arg_buff->index++] = *nbr_str++;
 }
 
 void	post_padding_number(t_pf *arg, t_buff *arg_buff, size_t nbr_len)
 {
-
+	arg += 0; arg_buff += 0; nbr_len += 0;
 }
 
 void	handle_number(t_pf *arg, t_buff *arg_buff, uintmax_t nbr)

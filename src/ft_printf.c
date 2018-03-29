@@ -6,12 +6,12 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/27 16:32:56 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/29 14:43:30 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/03/29 18:05:24 by astrielov        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
-#include "../libft/libft.h"
+#include "libft/libft.h"
 
 void		inner_pf(char *format, va_list va, t_buff *buff)
 {

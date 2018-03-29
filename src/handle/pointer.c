@@ -14,5 +14,5 @@
 
 void	handle_pointer(t_pf *arg, t_buff *arg_buff, size_t nbr)
 {
-
+	arg += 0; arg_buff += 0; nbr += 0;
 }
