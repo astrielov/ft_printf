@@ -6,7 +6,7 @@
 /*   By: astrelov <astrelov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/04 16:55:40 by astrelov          #+#    #+#             */
-/*   Updated: 2018/03/29 18:32:06 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/03/30 12:38:08 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,18 @@ void	string_helper(int *failed, int *succeed, char *s, char *s2)
 	a = ft_printf(s, s2);
 	puts("$");
 	b = printf(s, s2);
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+}
+
+void	char_helper(int *failed, int *succeed, char *s, char chr)
+{
+	int a = 0, b = 0;
+
+	a = ft_printf(s, chr);
+	puts("$");
+	b = printf(s, chr);
 	puts("$\n");
 	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
 	if (a != b) *failed += 1; else *succeed += 1;
@@ -188,6 +200,13 @@ void	integer(int *failed, int *succeed)
 //	hexademical(failed, succeed);
 }
 
+void	chr(int *failed, int *succeed)
+{
+	printf("\033[32;1m\t\t\t>>>> CHAR <<<<\033[0m\n\n\n");
+
+	char_helper(failed, succeed, "%05c", 42);
+}
+
 void	string(int *failed, int *succeed)
 {
 	printf("\033[32;1m\t\t\t>>>> STRING <<<<\033[0m\n\n\n");
@@ -273,6 +292,7 @@ int 	main()
 		puts("\n\n\n");
 
 	integer(&failed, &succeed);
+	chr(&failed, &succeed);
 //	string(&failed, &succeed);
 //	wide_char(&failed, &succeed);
 //	wide_string(&failed, &succeed);

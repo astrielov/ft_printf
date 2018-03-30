@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
-#include "../../libft/libft.h"
+#include "../libft/libft.h"
 
 size_t str_bytes_to_print(t_pf *arg, char *str)
 {

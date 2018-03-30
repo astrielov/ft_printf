@@ -14,11 +14,14 @@
 
 void		char_pre_padding(t_pf *arg, t_buff *arg_buff, size_t bytes)
 {
+	char	char_to_fill;
+
+	char_to_fill = (char)(arg->flags & FLAG_ZERO ? '0' : ' ');
 	while (!(arg->flags & FLAG_MINUS) && (arg->width)-- > bytes)
 	{
 		if (arg_buff->index >= arg_buff->size)
 			buff_realloc(arg_buff);
-		(arg_buff->buff)[arg_buff->index++] = ' ';
+		(arg_buff->buff)[arg_buff->index++] = char_to_fill;
 	}
 }
 

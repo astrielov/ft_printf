@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
-#include "../../libft/libft.h"
+#include "../libft/libft.h"
 
 void	parse_precision(char **format, va_list va, t_pf *arg)
 {

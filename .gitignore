@@ -13,3 +13,5 @@ obj/
 libft\.a
 
 libftprintf\.a
+
+cmake-build-debug/

@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
-#include "../../libft/libft.h"
+#include "../libft/libft.h"
 
 void	buff_realloc(t_buff *buff)
 {
