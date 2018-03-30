@@ -6,7 +6,7 @@
 /*   By: astrelov <astrelov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/04 16:55:40 by astrelov          #+#    #+#             */
-/*   Updated: 2018/03/30 12:38:08 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/03/30 16:41:11 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,8 +85,10 @@ void	pointer_helper(int *failed, int *succeed, char *s, void *p)
 	if (a != b) *failed += 1; else *succeed += 1;
 }
 
-void	decimal_signed(int *failed, int *succeed)
+void	decimal_signed_tests(int *failed, int *succeed)
 {
+	printf("\033[32;1m\t\t\t>>>> DECIMAL SIGNED <<<<\033[0m\n\n\n");
+
 	int_helper(failed, succeed, "%d", 42);
 	int_helper(failed, succeed, "%i", 42);
 	int_helper(failed, succeed, "%D", 42);
@@ -111,8 +113,10 @@ void	decimal_signed(int *failed, int *succeed)
 	int_helper(failed, succeed, "%08.3d", -4242);
 }
 
-void	decimal_unsigned(int *failed, int *succeed)
+void	decimal_unsigned_tests(int *failed, int *succeed)
 {
+	printf("\033[32;1m\t\t\t>>>> DECIMAL UNSIGNED <<<<\033[0m\n\n\n");
+
 	int_helper(failed, succeed, "%u", 42);
 	int_helper(failed, succeed, "%U", 42);
 	int_helper(failed, succeed, "%u", 0);
@@ -136,35 +140,90 @@ void	decimal_unsigned(int *failed, int *succeed)
 	int_helper(failed, succeed, "%08.3u", -4242);
 }
 
-void	octal(int *failed, int *succeed)
+void	octal_tests(int *failed, int *succeed)
 {
+	printf("\033[32;1m\t\t\t>>>> OCTAL <<<<\033[0m\n\n\n");
+
 	int_helper(failed, succeed, "%o", 42);
 	int_helper(failed, succeed, "%O", 42);
 	int_helper(failed, succeed, "%o", 0);
-	int_helper(failed, succeed, "%3.o", 0);
 	int_helper(failed, succeed, "%.o", 0);
-	int_helper(failed, succeed, "%6o", 4242);
-	int_helper(failed, succeed, "%6o", -4242);
-	int_helper(failed, succeed, "%3o", 4242);
-	int_helper(failed, succeed, "%3o", -4242);
-	int_helper(failed, succeed, "%.6o", 4242);
-	int_helper(failed, succeed, "%.3o", 4242);
-	int_helper(failed, succeed, "%8.3o", -4242);
-	int_helper(failed, succeed, "%6o", -4242);
-	int_helper(failed, succeed, "%.3o", -4242);
-	int_helper(failed, succeed, "%.6o", -4242);
-	int_helper(failed, succeed, "%-8.3o", -4242);
-	int_helper(failed, succeed, "% .3o", 4242);
-	int_helper(failed, succeed, "% .7o", 4242);
-	int_helper(failed, succeed, "%+.3o", -4242);
-	int_helper(failed, succeed, "%+.6o", 4242);
-	int_helper(failed, succeed, "%015.3o", -4242);
-	int_helper(failed, succeed, "% 15.3o", -4242);
-	int_helper(failed, succeed, "%#15.3o", -4242);
+	int_helper(failed, succeed, "%8o", 2500);
+	int_helper(failed, succeed, "%08o", 2500);
+	int_helper(failed, succeed, "%6o", -2500);
+	int_helper(failed, succeed, "%3o", 2500);
+	int_helper(failed, succeed, "%3o", -2500);
+	int_helper(failed, succeed, "%.6o", 2500);
+	int_helper(failed, succeed, "%.3o", 2500);
+	int_helper(failed, succeed, "%8.3o", -2500);
+	int_helper(failed, succeed, "%6o", -2500);
+	int_helper(failed, succeed, "%.3o", -2500);
+	int_helper(failed, succeed, "%.6o", -2500);
+	int_helper(failed, succeed, "% .3o", 2500);
+	int_helper(failed, succeed, "%+.3o", -2500);
+	int_helper(failed, succeed, "%+.6o", 2500);
+	int_helper(failed, succeed, "% 15.3o", -2500);
+	int_helper(failed, succeed, "% .7o", 2500);
+	int_helper(failed, succeed, "%08o", 2500);
+	int_helper(failed, succeed, "%015.3o", 2500);
+	int_helper(failed, succeed, "%015.8o", 2500);
+	int_helper(failed, succeed, "%15.4o", 2500);
+	int_helper(failed, succeed, "%015.3o", -2500);
+	int_helper(failed, succeed, "%015.13o", -2500);
+	int_helper(failed, succeed, "%3.o", 0);
+	int_helper(failed, succeed, "%03.o", 0);
+	int_helper(failed, succeed, "%3.2o", 0);
+	int_helper(failed, succeed, "%015.13o", -2500);
+	int_helper(failed, succeed, "%#.o", 0);
+	int_helper(failed, succeed, "%#3.2o", 0);
+	int_helper(failed, succeed, "%#.7o", 2500);
+	int_helper(failed, succeed, "%#8.3o", -2500);
+	int_helper(failed, succeed, "%#3.o", 0);
+	int_helper(failed, succeed, "%#15.3o", -2500);
+	int_helper(failed, succeed, "%#6o", 2500);
+
+	printf("\033[32;1m\t\t\t>>>> OCTAL FLAG MINUS <<<<\033[0m\n\n\n");
+
+	int_helper(failed, succeed, "%-.o", 0);
+	int_helper(failed, succeed, "%-8o", 2500);
+	int_helper(failed, succeed, "%-08o", 2500);
+	int_helper(failed, succeed, "%-6o", -2500);
+	int_helper(failed, succeed, "%-3o", 2500);
+	int_helper(failed, succeed, "%-3o", -2500);
+	int_helper(failed, succeed, "%-.3o", 2500);
+	int_helper(failed, succeed, "%-8.3o", -2500);
+	int_helper(failed, succeed, "%-6o", -2500);
+	int_helper(failed, succeed, "%-.3o", -2500);
+	int_helper(failed, succeed, "%-.6o", -2500);
+	int_helper(failed, succeed, "%- .3o", 2500);
+	int_helper(failed, succeed, "%-+.3o", -2500);
+	int_helper(failed, succeed, "%-+.6o", 2500);
+	int_helper(failed, succeed, "%- 15.3o", -2500);
+	int_helper(failed, succeed, "%- .7o", 2500);
+	int_helper(failed, succeed, "%-08o", 2500);
+	int_helper(failed, succeed, "%-015.3o", 2500);
+	int_helper(failed, succeed, "%-015.3o", -2500);
+	int_helper(failed, succeed, "%-#.o", 0);
+	int_helper(failed, succeed, "%-#.7o", 2500);
+	int_helper(failed, succeed, "%-#8.3o", -2500);
+	int_helper(failed, succeed, "%-#3.o", 0);
+	int_helper(failed, succeed, "%-#15.3o", -2500);
+	int_helper(failed, succeed, "%-#6o", 2500);
+	int_helper(failed, succeed, "%-.6o", 2500);
+	int_helper(failed, succeed, "%-015.8o", 2500);
+	int_helper(failed, succeed, "%-015.13o", -2500);
+	int_helper(failed, succeed, "%-3.2o", 0);
+	int_helper(failed, succeed, "%-015.13o", -2500);
+	int_helper(failed, succeed, "%-#3.2o", 0);
+	int_helper(failed, succeed, "%-15.4o", 2500);
+	int_helper(failed, succeed, "%-3.o", 0);
+	int_helper(failed, succeed, "%-03.o", 0);
 }
 
-void	hexademical(int *failed, int *succeed)
+void	hexademical_tests(int *failed, int *succeed)
 {
+	printf("\033[32;1m\t\t\t>>>> HEXADEMICAL <<<<\033[0m\n\n\n");
+
 	int_helper(failed, succeed, "%x", 42);
 	int_helper(failed, succeed, "%X", 42);
 	int_helper(failed, succeed, "%x", 0);
@@ -190,24 +249,24 @@ void	hexademical(int *failed, int *succeed)
 	int_helper(failed, succeed, "%0#12.3x", -4242);
 }
 
-void	integer(int *failed, int *succeed)
+void	integer_tests(int *failed, int *succeed)
 {
 	printf("\033[32;1m\t\t\t>>>> INTEGER <<<<\033[0m\n\n\n");
 
-//	decimal_signed(failed, succeed);
-//	decimal_unsigned(failed, succeed);
-	octal(failed, succeed);
-//	hexademical(failed, succeed);
+//	decimal_signed_tests(failed, succeed);
+//	decimal_unsigned_tests(failed, succeed);
+	octal_tests(failed, succeed);
+//	hexademical_tests(failed, succeed);
 }
 
-void	chr(int *failed, int *succeed)
+void	chr_tests(int *failed, int *succeed)
 {
 	printf("\033[32;1m\t\t\t>>>> CHAR <<<<\033[0m\n\n\n");
 
 	char_helper(failed, succeed, "%05c", 42);
 }
 
-void	string(int *failed, int *succeed)
+void	string_tests(int *failed, int *succeed)
 {
 	printf("\033[32;1m\t\t\t>>>> STRING <<<<\033[0m\n\n\n");
 
@@ -219,7 +278,7 @@ void	string(int *failed, int *succeed)
 //	string_helper(failed, succeed, "%05.s", 0);
 }
 
-void	wide_char(int *failed, int *succeed)
+void	wide_char_tests(int *failed, int *succeed)
 {
 	printf("\033[32;1m\t\t\t>>>> WIDE CHAR <<<<\033[0m\n\n\n");
 
@@ -229,7 +288,7 @@ void	wide_char(int *failed, int *succeed)
 //	wide_char_helper(failed, succeed, "%C", 0);
 }
 
-void	wide_string(int *failed, int *succeed)
+void	wide_string_tests(int *failed, int *succeed)
 {
 	printf("\033[32;1m\t\t\t>>>> WIDE STRING <<<<\033[0m\n\n\n");
 
@@ -245,14 +304,14 @@ void	wide_string(int *failed, int *succeed)
 //	wide_string_helper(failed, succeed, "%5.0S", 0);
 }
 
-void	pointer(int *failed, int *succeed)
+void	pointer_tests(int *failed, int *succeed)
 {
 	printf("\033[32;1m\t\t\t>>>> POINTER <<<<\033[0m\n\n\n");
 
 	pointer_helper(failed, succeed, "%05p", 0);
 	pointer_helper(failed, succeed, "%09.2p", (void *)1234);
 	pointer_helper(failed, succeed, "%-9.2p", (void *)1234);
-	pointer_helper(failed, succeed, "%09.2p", &wide_string);
+	pointer_helper(failed, succeed, "%09.2p", &wide_string_tests);
 	pointer_helper(failed, succeed, "%5p", 0);
 	pointer_helper(failed, succeed, "%04.8p", 0);
 	pointer_helper(failed, succeed, "%05.2p", 0);
@@ -262,7 +321,7 @@ void	pointer(int *failed, int *succeed)
 	pointer_helper(failed, succeed, "%.0p", 0);
 }
 
-void	invalid_specifier(int *failed, int *succeed)
+void	invalid_specifier_tests(int *failed, int *succeed)
 {
 	int a = 0, b = 0;
 
@@ -281,6 +340,35 @@ void	invalid_specifier(int *failed, int *succeed)
 	puts("$\n");
 	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
 	if (a != b) *failed += 1; else *succeed += 1;
+
+	a = ft_printf("%   %", "test");
+	puts("$");
+	b = printf("%   %", "test");
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
+	a = ft_printf("%%", "test");
+	puts("$");
+	b = printf("%%", "test");
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
+	a = ft_printf("%-5%");
+	puts("$");
+	b = printf("%-5%");
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
+	a = ft_printf("%5%");
+	puts("$");
+	b = printf("%5%");
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
 }
 
 int 	main()
@@ -291,14 +379,14 @@ int 	main()
 	for (int i = 0; i < 20; i++)
 		puts("\n\n\n");
 
-	integer(&failed, &succeed);
-	chr(&failed, &succeed);
-//	string(&failed, &succeed);
-//	wide_char(&failed, &succeed);
-//	wide_string(&failed, &succeed);
-//	pointer(&failed, &succeed);
-//	invalid_specifier(&failed, &succeed);
+	integer_tests(&failed, &succeed);
+//	chr_tests(&failed, &succeed);
+//	string_tests(&failed, &succeed);
+//	wide_char_tests(&failed, &succeed);
+//	wide_string_tests(&failed, &succeed);
+//	pointer_tests(&failed, &succeed);
+//	invalid_specifier_tests(&failed, &succeed);
 
-	printf("\n\n\033[32;1m...........................TESTS SUCCEED:\t%d\033[0m\n", succeed);
-	printf("\033[31;1m...........................TESTS FAILED:\t%d\033[0m\n\n\n", failed);
+	printf("\n\n\033[32;1m...........................RETURNED VALUE EQUAL:\t%d\033[0m\n", succeed);
+	printf("\033[31;1m...........................RETURNED VALUE NOT EQUAL:\t%d\033[0m\n\n\n", failed);
 }

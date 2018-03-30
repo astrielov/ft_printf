@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 17:34:17 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/29 21:06:59 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/03/30 13:13:49 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,25 +36,6 @@ void		prepare_number_arg(t_pf *arg)
 	}
 }
 
-void	pre_padding_number(t_pf *arg, t_buff *arg_buff, size_t nbr_len)
-{
-	arg += 0; arg_buff += 0; nbr_len += 0;
-	if (arg->nbr_is_negative)
-		(arg_buff->buff)[arg_buff->index++] = '-';
-}
-
-void	fill_number(t_pf *arg, t_buff *arg_buff, char *nbr_str, size_t nbr_len)
-{
-	arg += 0; arg_buff += 0; nbr_len += 0;
-	while (*nbr_str)
-		(arg_buff->buff)[arg_buff->index++] = *nbr_str++;
-}
-
-void	post_padding_number(t_pf *arg, t_buff *arg_buff, size_t nbr_len)
-{
-	arg += 0; arg_buff += 0; nbr_len += 0;
-}
-
 void	handle_number(t_pf *arg, t_buff *arg_buff, uintmax_t nbr)
 {
 	char		*nbr_str;
@@ -72,9 +53,12 @@ void	handle_number(t_pf *arg, t_buff *arg_buff, uintmax_t nbr)
 		bytes_left = arg_buff->size - arg_buff->index;
 	}
 
+	if (arg->base == 8)
+		octal(arg, arg_buff, nbr_str, nbr_len);
+	if (arg->base == 10)
+		decimal(arg, arg_buff, nbr_str, nbr_len);
+	if (arg->base == 16)
+		hexademical(arg, arg_buff, nbr_str, nbr_len);
 
-	pre_padding_number(arg, arg_buff, nbr_len);
-	fill_number(arg, arg_buff, nbr_str, nbr_len);
-	post_padding_number(arg, arg_buff, nbr_len);
 	ft_memdel((void **)&nbr_str);
 }

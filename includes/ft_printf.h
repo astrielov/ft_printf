@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/27 16:32:38 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/30 11:31:39 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/03/30 13:14:33 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ typedef struct		s_buff
 int 							ft_printf(const char *format, ...);
 
 
-unsigned int			parse_atoi(char **format);
+unsigned int					parse_atoi(char **format);
 void							parse(char **format, va_list va, t_pf **arg);
 void							parse_flags(char **format, t_pf *arg);
 void							parse_width(char **format, va_list va, t_pf *arg);
@@ -66,7 +66,7 @@ void							parse_length(char **format, t_pf *arg);
 //void							parse_specifier(char **format, t_pf *pf);
 
 
-t_buff						*handle_argument(va_list va, t_pf *pf);
+t_buff							*handle_argument(va_list va, t_pf *pf);
 void							handle_number(t_pf *arg, t_buff *arg_buff, uintmax_t nbr);
 void							handle_char(t_pf *arg, t_buff *arg_buff, wchar_t chr);
 void							handle_string(t_pf *arg, t_buff *arg_buff, wchar_t *str);
@@ -75,19 +75,23 @@ void							handle_pointer(t_pf *arg, t_buff *arg_buff, size_t nbr);
 
 void							buff_realloc(t_buff *buff);
 void							concat_buffs(t_buff *buff, t_buff **arg_buff);
+void							push_chars(t_buff *buff, char c, size_t amount);
 
 
-size_t						wide_char_bytes(wchar_t chr);
+size_t							wide_char_bytes(wchar_t chr);
 void							one_byte(t_buff *arg_buff, unsigned int chr);
 void							two_bytes(t_buff *arg_buff, unsigned int chr);
 void							three_bytes(t_buff *arg_buff, unsigned int chr);
 void							four_bytes(t_buff *arg_buff, unsigned int chr);
 
 void							prepare_string_arg(t_pf *arg);
-size_t 						wstr_bytes_to_print(t_pf *arg, wchar_t *str);
+size_t 							wstr_bytes_to_print(t_pf *arg, wchar_t *str);
 void							fill_wide_str(t_pf *arg, t_buff *arg_buff, wchar_t *str, size_t str_bytes);
 
 char							*stringify_nbr(t_pf *arg, uintmax_t nbr);
+void							octal(t_pf *arg, t_buff *arg_buff, char *nbr_str, size_t nbr_len);
+void							decimal(t_pf *arg, t_buff *arg_buff, char *nbr_str, size_t nbr_len);
+void							hexademical(t_pf *arg, t_buff *arg_buff, char *nbr_str, size_t nbr_len);
 
 
 void							debug_print_pf(t_pf *arg);

@@ -6,7 +6,7 @@
 #    By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/29 20:54:44 by astrielov         #+#    #+#              #
-#    Updated: 2018/03/30 11:31:39 by astrelov         ###   ########.fr        #
+#    Updated: 2018/03/30 13:09:00 by astrelov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,8 +27,12 @@ SRCS =	src/ft_printf.c \
 		src/handle/string.c \
 		src/handle/pointer.c \
 		src/handle/wstring.c \
-		src/handle/integer.c \
+		src/handle/integer/integer.c \
+		src/handle/integer/octal.c \
+		src/handle/integer/decimal.c \
+		src/handle/integer/hexademical.c \
 		src/helpers/buffer.c \
+		src/helpers/push_chars.c \
 		src/libft/ft_atoi.c \
 		src/libft/ft_bzero.c \
 		src/libft/ft_d_bblsort.c \
@@ -118,7 +122,7 @@ $(OBJS): | obj
 obj:
 		@mkdir -p $(OBJDIR)/libft
 		@mkdir -p $(OBJDIR)/parse
-		@mkdir -p $(OBJDIR)/handle
+		@mkdir -p $(OBJDIR)/handle/integer
 		@mkdir -p $(OBJDIR)/helpers
 
 $(OBJDIR)%.o: src/%.c

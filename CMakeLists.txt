@@ -92,8 +92,11 @@ set(FT_PRINTF_NEW
         src/handle/string.c
         src/handle/pointer.c
         src/handle/wstring.c
-        src/handle/integer.c
-        )
+        src/handle/integer/integer.c
+        src/handle/integer/octal.c
+        src/handle/integer/hexademical.c
+        src/handle/integer/decimal.c
+        src/helpers/push_chars.c)
 
 add_library(ft_printf_new
         ${FT_PRINTF_NEW}
