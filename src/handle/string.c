@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 22:25:33 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/29 13:23:41 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/04/01 20:03:46 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,11 @@ void	handle_string(t_pf *arg, t_buff *arg_buff, wchar_t *str)
 	size_t	str_bytes;
 
 	prepare_string_arg(arg);
+	if (!str)
+	{
+		arg->specifier = 's';
+		str = (wchar_t *)"(null)";
+	}
 	if (arg->specifier == 'S')
 		str_bytes = wstr_bytes_to_print(arg, str);
 	else

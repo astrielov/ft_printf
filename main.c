@@ -6,7 +6,7 @@
 /*   By: astrelov <astrelov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/04 16:55:40 by astrelov          #+#    #+#             */
-/*   Updated: 2018/04/01 19:54:43 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/01 20:04:32 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -531,7 +531,8 @@ void	wide_string_tests(int *failed, int *succeed)
 	wide_string_helper(failed, succeed, "%5.4S", L"米米米");
 	wide_string_helper(failed, succeed, "%.4S", L"米米米");
 	wide_string_helper(failed, succeed, "%5.0S", L"米米米");
-//	wide_string_helper(failed, succeed, "%5.0S", 0);
+	wide_string_helper(failed, succeed, "%5S", 0);
+	wide_string_helper(failed, succeed, "%5.0S", 0);
 }
 
 void	pointer_tests(int *failed, int *succeed)
@@ -655,9 +656,9 @@ int 	main()
 //	chr_tests(&failed, &succeed);
 //	string_tests(&failed, &succeed);
 //	wide_char_tests(&failed, &succeed);
-//	wide_string_tests(&failed, &succeed);
+	wide_string_tests(&failed, &succeed);
 //	pointer_tests(&failed, &succeed);
-	invalid_specifier_tests(&failed, &succeed);
+//	invalid_specifier_tests(&failed, &succeed);
 
 	printf("\n\n\033[32;1m...........................RETURNED VALUE EQUAL:\t%d\033[0m\n", succeed);
 	printf("\033[31;1m...........................RETURNED VALUE NOT EQUAL:\t%d\033[0m\n\n\n", failed);
