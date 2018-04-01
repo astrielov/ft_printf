@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/27 16:32:38 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/30 13:14:33 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/01 19:54:44 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,7 @@ void							handle_number(t_pf *arg, t_buff *arg_buff, uintmax_t nbr);
 void							handle_char(t_pf *arg, t_buff *arg_buff, wchar_t chr);
 void							handle_string(t_pf *arg, t_buff *arg_buff, wchar_t *str);
 void							handle_pointer(t_pf *arg, t_buff *arg_buff, size_t nbr);
+void							invalid_specifier(t_pf *arg, t_buff *arg_buff);
 
 
 void							buff_realloc(t_buff *buff);

@@ -6,7 +6,7 @@
 #    By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/29 20:54:44 by astrielov         #+#    #+#              #
-#    Updated: 2018/03/30 13:09:00 by astrelov         ###   ########.fr        #
+#    Updated: 2018/04/01 19:54:44 by astrelov         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ SRCS =	src/ft_printf.c \
 		src/handle/string.c \
 		src/handle/pointer.c \
 		src/handle/wstring.c \
+		src/handle/invalid_specifier.c \
 		src/handle/integer/integer.c \
 		src/handle/integer/octal.c \
 		src/handle/integer/decimal.c \

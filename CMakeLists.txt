@@ -96,7 +96,7 @@ set(FT_PRINTF_NEW
         src/handle/integer/octal.c
         src/handle/integer/hexademical.c
         src/handle/integer/decimal.c
-        src/helpers/push_chars.c)
+        src/helpers/push_chars.c src/handle/invalid_specifier.c)
 
 add_library(ft_printf_new
         ${FT_PRINTF_NEW}
