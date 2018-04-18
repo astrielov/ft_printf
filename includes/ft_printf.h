@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/27 16:32:38 by astrielov         #+#    #+#             */
-/*   Updated: 2018/04/01 19:54:44 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/18 12:43:51 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@
 #define FLAG_HASH						(1 << 4)
 #define FLAG_UPPERCASE			(1 << 5)
 #define FLAG_GOT_PRECISION	(1 << 6)
-#define LENGTH_SHORT				(1 << 0)
-#define LENGTH_SHORT_SHORT	(1 << 1)
+#define LENGTH_SHORT_SHORT	(1 << 0)
+#define LENGTH_SHORT				(1 << 1)
 #define LENGTH_LONG					(1 << 2)
 #define LENGTH_LONG_LONG		(1 << 3)
 #define LENGTH_INTMAX				(1 << 4)

@@ -6,7 +6,7 @@
 /*   By: astrelov <astrelov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 13:05:23 by astrelov          #+#    #+#             */
-/*   Updated: 2018/04/01 19:54:44 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/18 14:18:07 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void	octal(t_pf *arg, t_buff *arg_buff, char *nbr_str, size_t nbr_len)
 {
 	if (*nbr_str == '0' && nbr_len == 1 && arg->flags & FLAG_GOT_PRECISION)
 		nbr_len = 0;
-	if (arg->flags & FLAG_HASH)
+	if (arg->flags & FLAG_HASH && !(nbr_len == 1 && *nbr_str == '0'))
 		nbr_len += 1;
 	pre_padding_octal(arg, arg_buff, nbr_len);
 	fill_octal(arg, arg_buff, nbr_str, nbr_len);

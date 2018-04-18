@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 17:34:17 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/30 13:13:49 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/18 14:39:35 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void		prepare_number_arg(t_pf *arg)
 {
 	if (arg->specifier == 'X' || arg->specifier == 'O')
 		arg->flags |= FLAG_UPPERCASE;
-	if (arg->specifier == 'D' || arg->specifier == 'U')
+	if (arg->specifier == 'D' || arg->specifier == 'U' || arg->specifier == 'O')
 		arg->length = LENGTH_LONG;
 	if (ft_strchr("DOXU", arg->specifier))
 		arg->specifier += 32;

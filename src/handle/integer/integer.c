@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/29 15:25:24 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/29 17:34:03 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/04/18 14:47:59 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,10 +56,10 @@ static char				*handle_u_intmax_t(t_pf *arg, uintmax_t nbr)
 
 static uintmax_t	handle_signed_length(t_pf *arg, uintmax_t nbr)
 {
-	if (arg->length == LENGTH_SHORT)
-		return ((short)nbr);
 	if (arg->length == LENGTH_SHORT_SHORT)
 		return ((char)nbr);
+	if (arg->length == LENGTH_SHORT)
+		return ((short)nbr);
 	if (arg->length == LENGTH_LONG)
 		return ((long)nbr);
 	if (arg->length == LENGTH_LONG_LONG)
@@ -73,17 +73,17 @@ static uintmax_t	handle_signed_length(t_pf *arg, uintmax_t nbr)
 
 static uintmax_t	handle_unsigned_length(t_pf *arg, uintmax_t nbr)
 {
+	if (arg->length == LENGTH_SHORT_SHORT)
+		return ((unsigned char)nbr);
 	if (arg->length == LENGTH_SHORT)
 		return ((unsigned short)nbr);
-	else if (arg->length == LENGTH_SHORT_SHORT)
-		return ((unsigned char)nbr);
-	else if (arg->length == LENGTH_LONG)
+	if (arg->length == LENGTH_LONG)
 		return ((unsigned long)nbr);
-	else if (arg->length == LENGTH_LONG_LONG)
+	if (arg->length == LENGTH_LONG_LONG)
 		return ((unsigned long long)nbr);
-	else if (arg->length == LENGTH_INTMAX)
+	if (arg->length == LENGTH_INTMAX)
 		return ((uintmax_t)nbr);
-	else if (arg->length == LENGTH_SIZE_T)
+	if (arg->length == LENGTH_SIZE_T)
 		return ((size_t)nbr);
 	return ((unsigned int)nbr);
 }

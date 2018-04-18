@@ -6,7 +6,7 @@
 /*   By: astrelov <astrelov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/04 16:55:40 by astrelov          #+#    #+#             */
-/*   Updated: 2018/04/18 13:42:06 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/18 14:51:11 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -240,6 +240,7 @@ void	decimal_unsigned_tests(int *failed, int *succeed)
 	int_helper(failed, succeed, "%#.3u", 2500);
 	int_helper(failed, succeed, "%#.2u", 2500);
 	int_helper(failed, succeed, "%#u", 0);
+	int_helper(failed, succeed, "%hhu", UCHAR_MAX + 42);
 
 	printf("\033[32;1m\t\t\t>>>> DECIMAL UNSIGNED FLAG MINUS <<<<\033[0m\n\n\n");
 
@@ -290,6 +291,7 @@ void	decimal_unsigned_tests(int *failed, int *succeed)
 	int_helper(failed, succeed, "%-#.3u", 2500);
 	int_helper(failed, succeed, "%-#.2u", 2500);
 	int_helper(failed, succeed, "%-#u", 0);
+	int_helper(failed, succeed, "%-hhu", UCHAR_MAX + 42);
 }
 
 void	octal_tests(int *failed, int *succeed)
@@ -336,6 +338,7 @@ void	octal_tests(int *failed, int *succeed)
 	int_helper(failed, succeed, "%#15.3o", -2500);
 	int_helper(failed, succeed, "%#6o", 2500);
 	int_helper(failed, succeed, "%hhO", USHRT_MAX);
+	int_helper(failed, succeed, "%#o", 0);
 
 	printf("\033[32;1m\t\t\t>>>> OCTAL FLAG MINUS <<<<\033[0m\n\n\n");
 
@@ -373,6 +376,8 @@ void	octal_tests(int *failed, int *succeed)
 	int_helper(failed, succeed, "%-15.4o", 2500);
 	int_helper(failed, succeed, "%-3.o", 0);
 	int_helper(failed, succeed, "%-03.o", 0);
+	int_helper(failed, succeed, "%-hhO", USHRT_MAX);
+	int_helper(failed, succeed, "%-#o", 0);
 }
 
 void	hexademical_tests(int *failed, int *succeed)
@@ -482,10 +487,10 @@ void	integer_tests(int *failed, int *succeed)
 {
 	printf("\033[32;1m\t\t\t>>>> INTEGER <<<<\033[0m\n\n\n");
 
-	decimal_signed_tests(failed, succeed);
-	decimal_unsigned_tests(failed, succeed);
+//	decimal_signed_tests(failed, succeed);
+//	decimal_unsigned_tests(failed, succeed);
 	octal_tests(failed, succeed);
-	hexademical_tests(failed, succeed);
+//	hexademical_tests(failed, succeed);
 }
 
 void	chr_tests(int *failed, int *succeed)
@@ -670,12 +675,12 @@ int 	main()
 	for (int i = 0; i < 20; i++)
 		puts("\n\n\n");
 
-//	integer_tests(&failed, &succeed);
+	integer_tests(&failed, &succeed);
 //	chr_tests(&failed, &succeed);
 //	string_tests(&failed, &succeed);
 //	wide_char_tests(&failed, &succeed);
 //	wide_string_tests(&failed, &succeed);
-	pointer_tests(&failed, &succeed);
+//	pointer_tests(&failed, &succeed);
 //	invalid_specifier_tests(&failed, &succeed);
 
 	printf("\n\n\033[32;1m...........................RETURNED VALUE EQUAL:\t%d\033[0m\n", succeed);
