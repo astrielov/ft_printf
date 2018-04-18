@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/29 13:19:36 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/29 13:26:02 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/04/18 12:43:46 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	prepare_string_arg(t_pf *arg)
 {
-	if (arg->specifier == 's' && arg->length == LENGTH_LONG_LONG)
+	if (arg->specifier == 's' && arg->length == LENGTH_LONG)
 		arg->specifier = 'S';
 }
 

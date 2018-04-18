@@ -6,7 +6,7 @@
 /*   By: astrelov <astrelov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/04 16:55:40 by astrelov          #+#    #+#             */
-/*   Updated: 2018/04/18 14:51:11 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/18 15:02:15 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -487,10 +487,10 @@ void	integer_tests(int *failed, int *succeed)
 {
 	printf("\033[32;1m\t\t\t>>>> INTEGER <<<<\033[0m\n\n\n");
 
-//	decimal_signed_tests(failed, succeed);
-//	decimal_unsigned_tests(failed, succeed);
+	decimal_signed_tests(failed, succeed);
+	decimal_unsigned_tests(failed, succeed);
 	octal_tests(failed, succeed);
-//	hexademical_tests(failed, succeed);
+	hexademical_tests(failed, succeed);
 }
 
 void	chr_tests(int *failed, int *succeed)
@@ -528,7 +528,8 @@ void	wide_string_tests(int *failed, int *succeed)
 	printf("\033[32;1m\t\t\t>>>> WIDE STRING <<<<\033[0m\n\n\n");
 
 	wide_string_helper(failed, succeed, "%8.S", L"是一只猫是一只猫");
-	wide_string_helper(failed, succeed, "%8.4lls", L"是一只猫是一只猫");
+	wide_string_helper(failed, succeed, "%8.4ls", L"是一只猫是一只猫");
+	wide_string_helper(failed, succeed, "%ls", L"是一只猫是一只猫");
 	wide_string_helper(failed, succeed, "%8.4S", L"是一只猫是一只猫");
 	wide_string_helper(failed, succeed, "%.4S", L"是一只猫是一只猫");
 	wide_string_helper(failed, succeed, "%030S", L"是一只猫是一只猫");
@@ -665,6 +666,13 @@ void	invalid_specifier_tests(int *failed, int *succeed)
 	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
 	if (a != b) *failed += 1; else *succeed += 1;
 
+	a = ft_printf("%8.4lls", L"是一只猫是一只猫");
+	puts("$");
+	b = printf("%8.4lls", L"是一只猫是一只猫");
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
 }
 
 int 	main()
@@ -675,7 +683,7 @@ int 	main()
 	for (int i = 0; i < 20; i++)
 		puts("\n\n\n");
 
-	integer_tests(&failed, &succeed);
+//	integer_tests(&failed, &succeed);
 //	chr_tests(&failed, &succeed);
 //	string_tests(&failed, &succeed);
 //	wide_char_tests(&failed, &succeed);
