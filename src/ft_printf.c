@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/27 16:32:56 by astrielov         #+#    #+#             */
-/*   Updated: 2018/04/01 19:54:44 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/18 15:20:25 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,6 @@ void		inner_pf(char *format, va_list va, t_buff *buff)
 			buff_realloc(buff);
 		if (*format != '%')
 		{
-//			(buff->buff)[buff->index++] = (unsigned char)*format++;
 			push_chars(buff, *format++, 1);
 			continue;
 		}

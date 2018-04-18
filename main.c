@@ -6,7 +6,7 @@
 /*   By: astrelov <astrelov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/04 16:55:40 by astrelov          #+#    #+#             */
-/*   Updated: 2018/04/18 15:02:15 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/18 15:22:36 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -673,6 +673,41 @@ void	invalid_specifier_tests(int *failed, int *succeed)
 	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
 	if (a != b) *failed += 1; else *succeed += 1;
 
+	a = ft_printf("%-05%");
+	puts("$");
+	b = printf("%-05%");
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
+	a = ft_printf("% ");
+	puts("$");
+	b = printf("% ");
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
+	a = ft_printf("% h");
+	puts("$");
+	b = printf("% h");
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
+	a = ft_printf("%####0000 33..1..#00d\\n", 256);
+	puts("$");
+	b = printf("%####0000 33..1..#00d\\n", 256);
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
+	a = ft_printf("%ll#x", 9223372036854775807);
+	puts("$");
+	b = printf("%ll#x", 9223372036854775807);
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
 }
 
 int 	main()
@@ -689,7 +724,7 @@ int 	main()
 //	wide_char_tests(&failed, &succeed);
 //	wide_string_tests(&failed, &succeed);
 //	pointer_tests(&failed, &succeed);
-//	invalid_specifier_tests(&failed, &succeed);
+	invalid_specifier_tests(&failed, &succeed);
 
 	printf("\n\n\033[32;1m...........................RETURNED VALUE EQUAL:\t%d\033[0m\n", succeed);
 	printf("\033[31;1m...........................RETURNED VALUE NOT EQUAL:\t%d\033[0m\n\n\n", failed);
