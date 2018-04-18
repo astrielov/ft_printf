@@ -6,7 +6,7 @@
 /*   By: astrelov <astrelov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/04 16:55:40 by astrelov          #+#    #+#             */
-/*   Updated: 2018/04/01 20:04:32 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/18 13:42:06 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -539,17 +539,35 @@ void	pointer_tests(int *failed, int *succeed)
 {
 	printf("\033[32;1m\t\t\t>>>> POINTER <<<<\033[0m\n\n\n");
 
-	pointer_helper(failed, succeed, "%05p", 0);
-	pointer_helper(failed, succeed, "%09.2p", (void *)1234);
-	pointer_helper(failed, succeed, "%-9.2p", (void *)1234);
-	pointer_helper(failed, succeed, "%09.2p", &wide_string_tests);
-	pointer_helper(failed, succeed, "%5p", 0);
-	pointer_helper(failed, succeed, "%04.8p", 0);
-	pointer_helper(failed, succeed, "%05.2p", 0);
-	pointer_helper(failed, succeed, "%5p", 0);
-	pointer_helper(failed, succeed, "%09.2p", (void *)1234);
-	pointer_helper(failed, succeed, "%.p", 0);
-	pointer_helper(failed, succeed, "%.0p", 0);
+	pointer_helper(failed, succeed, "{%5p}", 0);
+	pointer_helper(failed, succeed, "{%9.2p}", (void *)1234);
+	pointer_helper(failed, succeed, "{%-9.2p}", (void *)1234);
+	pointer_helper(failed, succeed, "{%9.2p}", &wide_string_tests);
+	pointer_helper(failed, succeed, "{%9.19p}", &wide_string_tests);
+	pointer_helper(failed, succeed, "{%5p}", 0);
+	pointer_helper(failed, succeed, "{%4.8p}", 0);
+	pointer_helper(failed, succeed, "{%5.2p}", 0);
+	pointer_helper(failed, succeed, "{%5p}", 0);
+	pointer_helper(failed, succeed, "{%9.2p}", (void *)1234);
+	pointer_helper(failed, succeed, "{%.p}", 0);
+	pointer_helper(failed, succeed, "{%.0p}", 0);
+	pointer_helper(failed, succeed, "{%05p}", 0);
+
+	printf("\033[32;1m\t\t\t>>>> POINTER FLAG MINUS <<<<\033[0m\n\n\n");
+
+	pointer_helper(failed, succeed, "{%-5p}", 0);
+	pointer_helper(failed, succeed, "{%-9.2p}", (void *)1234);
+	pointer_helper(failed, succeed, "{%--9.2p}", (void *)1234);
+	pointer_helper(failed, succeed, "{%-9.2p}", &wide_string_tests);
+	pointer_helper(failed, succeed, "{%-9.19p}", &wide_string_tests);
+	pointer_helper(failed, succeed, "{%-5p}", 0);
+	pointer_helper(failed, succeed, "{%-4.8p}", 0);
+	pointer_helper(failed, succeed, "{%-5.2p}", 0);
+	pointer_helper(failed, succeed, "{%-5p}", 0);
+	pointer_helper(failed, succeed, "{%-9.2p}", (void *)1234);
+	pointer_helper(failed, succeed, "{%-.p}", 0);
+	pointer_helper(failed, succeed, "{%-.0p}", 0);
+	pointer_helper(failed, succeed, "{%-05p}", 0);
 }
 
 void	invalid_specifier_tests(int *failed, int *succeed)
@@ -656,8 +674,8 @@ int 	main()
 //	chr_tests(&failed, &succeed);
 //	string_tests(&failed, &succeed);
 //	wide_char_tests(&failed, &succeed);
-	wide_string_tests(&failed, &succeed);
-//	pointer_tests(&failed, &succeed);
+//	wide_string_tests(&failed, &succeed);
+	pointer_tests(&failed, &succeed);
 //	invalid_specifier_tests(&failed, &succeed);
 
 	printf("\n\n\033[32;1m...........................RETURNED VALUE EQUAL:\t%d\033[0m\n", succeed);
