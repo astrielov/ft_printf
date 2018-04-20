@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 10:30:22 by astrielov         #+#    #+#             */
-/*   Updated: 2018/04/20 15:56:03 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/20 16:07:52 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,30 +20,20 @@ int		parse_length(char **format, t_pf *arg)
 	found = 0;
 	length = 0;
 	if (**format == 'h')
-	{
-		found = 1;
 		length = (*(*format + 1) == 'h') ? LENGTH_SHORT_SHORT : LENGTH_SHORT;
-		*format += length == LENGTH_SHORT ? 1 : 2;
-	}
 	else if (**format == 'l')
-	{
-		found = 1;
 		length = (*(*format + 1) == 'l') ? LENGTH_LONG_LONG : LENGTH_LONG;
-		*format += length == LENGTH_LONG ? 1 : 2;
-	}
 	else if (**format == 'j')
-	{
-		found = 1;
 		length = LENGTH_INTMAX;
-		*format += 1;
-	}
 	else if (**format == 'z')
+		length = LENGTH_SIZE_T;
+	if (length)
 	{
 		found = 1;
-		length = LENGTH_SIZE_T;
-		*format += 1;
+		*format += (length == LENGTH_LONG_LONG
+					|| length == LENGTH_SHORT_SHORT) ? 2 : 1;
 	}
-	if (!arg->length && length)
+	if (length > arg->length)
 		arg->length = length;
 	return (found);
 }
