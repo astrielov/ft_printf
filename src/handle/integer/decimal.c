@@ -6,7 +6,7 @@
 /*   By: astrelov <astrelov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 13:06:24 by astrelov          #+#    #+#             */
-/*   Updated: 2018/04/01 19:54:44 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/20 15:09:47 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,9 +56,8 @@ void	pre_padding_decimal(t_pf *arg, t_buff *arg_buff, size_t nbr_len)
 	}
 }
 
-void	fill_decimal(t_pf *arg, t_buff *arg_buff, char *nbr_str, size_t nbr_len)
+void	fill_decimal(t_buff *arg_buff, char *nbr_str, size_t nbr_len)
 {
-	arg += 0; arg_buff += 0; nbr_len += 0;
 	while (nbr_len--)
 		(arg_buff->buff)[arg_buff->index++] = *nbr_str++;
 }
@@ -78,7 +77,7 @@ void	decimal(t_pf *arg, t_buff *arg_buff, char *nbr_str, size_t nbr_len)
 	if (arg->nbr_is_negative || arg->flags & (FLAG_SPACE | FLAG_PLUS))
 		arg->width -= arg->width > 0 ? 1 : 0;
 	pre_padding_decimal(arg, arg_buff, nbr_len);
-	fill_decimal(arg, arg_buff, nbr_str, nbr_len);
+	fill_decimal(arg_buff, nbr_str, nbr_len);
 	if (arg->flags & FLAG_MINUS)
 		post_padding_decimal(arg, arg_buff, nbr_len);
 }

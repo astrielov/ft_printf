@@ -6,7 +6,7 @@
 /*   By: astrelov <astrelov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/04 16:55:40 by astrelov          #+#    #+#             */
-/*   Updated: 2018/04/18 15:29:05 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/20 15:20:20 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -487,6 +487,14 @@ void	integer_tests(int *failed, int *succeed)
 {
 	printf("\033[32;1m\t\t\t>>>> INTEGER <<<<\033[0m\n\n\n");
 
+
+	int a = ft_printf("{%.*d}", -5, 42);
+	puts("$");
+	int b = printf("{%.*d}", -5, 42);
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
 	decimal_signed_tests(failed, succeed);
 	decimal_unsigned_tests(failed, succeed);
 	octal_tests(failed, succeed);
@@ -505,12 +513,19 @@ void	string_tests(int *failed, int *succeed)
 {
 	printf("\033[32;1m\t\t\t>>>> STRING <<<<\033[0m\n\n\n");
 
+	int a = ft_printf("{%.*s}", -5, "42");
+	puts("$");
+	int b = printf("{%.*s}", -5, "42");
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
 	string_helper(failed, succeed, "%.4s", "012345678");
 	string_helper(failed, succeed, "%5.0s", "012345678");
-//	string_helper(failed, succeed, "%5.0s", 0);
+	string_helper(failed, succeed, "%5.0s", 0);
 	string_helper(failed, succeed, "%5.4s", "012345678");
 	string_helper(failed, succeed, "%0.4s", "012345678");
-//	string_helper(failed, succeed, "%05.s", 0);
+	string_helper(failed, succeed, "%05.s", 0);
 }
 
 void	wide_char_tests(int *failed, int *succeed)
@@ -520,7 +535,7 @@ void	wide_char_tests(int *failed, int *succeed)
 	wide_char_helper(failed, succeed, "%C", L'猫');
 	wide_char_helper(failed, succeed, "%C", L'米');
 	wide_char_helper(failed, succeed, "%hhC", L'米');
-//	wide_char_helper(failed, succeed, "%C", 0);
+	wide_char_helper(failed, succeed, "%C", 0);
 }
 
 void	wide_string_tests(int *failed, int *succeed)
@@ -687,33 +702,33 @@ void	invalid_specifier_tests(int *failed, int *succeed)
 	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
 	if (a != b) *failed += 1; else *succeed += 1;
 
-//	a = ft_printf("% h");
-//	puts("$");
-//	b = printf("% h");
-//	puts("$\n");
-//	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
-//	if (a != b) *failed += 1; else *succeed += 1;
-//
-//	a = ft_printf("%####0000 33..1..#00d\\n", 256);
-//	puts("$");
-//	b = printf("%####0000 33..1..#00d\\n", 256);
-//	puts("$\n");
-//	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
-//	if (a != b) *failed += 1; else *succeed += 1;
-//
-//	a = ft_printf("%ll#x", 9223372036854775807);
-//	puts("$");
-//	b = printf("%ll#x", 9223372036854775807);
-//	puts("$\n");
-//	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
-//	if (a != b) *failed += 1; else *succeed += 1;
-//
-//	a = ft_printf("%hhld", 128);
-//	puts("$");
-//	b = printf("%hhld", 128);
-//	puts("$\n");
-//	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
-//	if (a != b) *failed += 1; else *succeed += 1;
+	a = ft_printf("% h");
+	puts("$");
+	b = printf("% h");
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
+	a = ft_printf("%####0000 33..1..#00d\\n", 256);
+	puts("$");
+	b = printf("%####0000 33..1..#00d\\n", 256);
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
+	a = ft_printf("%ll#x", 9223372036854775807);
+	puts("$");
+	b = printf("%ll#x", 9223372036854775807);
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
+	a = ft_printf("%hhld", 128);
+	puts("$");
+	b = printf("%hhld", 128);
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
 
 }
 
@@ -725,12 +740,12 @@ int 	main()
 	for (int i = 0; i < 20; i++)
 		puts("\n\n\n");
 
-//	integer_tests(&failed, &succeed);
-//	chr_tests(&failed, &succeed);
-//	string_tests(&failed, &succeed);
-//	wide_char_tests(&failed, &succeed);
-//	wide_string_tests(&failed, &succeed);
-//	pointer_tests(&failed, &succeed);
+	integer_tests(&failed, &succeed);
+	chr_tests(&failed, &succeed);
+	string_tests(&failed, &succeed);
+	wide_char_tests(&failed, &succeed);
+	wide_string_tests(&failed, &succeed);
+	pointer_tests(&failed, &succeed);
 	invalid_specifier_tests(&failed, &succeed);
 
 	printf("\n\n\033[32;1m...........................RETURNED VALUE EQUAL:\t%d\033[0m\n", succeed);
