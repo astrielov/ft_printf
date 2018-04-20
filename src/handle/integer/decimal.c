@@ -6,7 +6,7 @@
 /*   By: astrelov <astrelov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 13:06:24 by astrelov          #+#    #+#             */
-/*   Updated: 2018/04/20 15:09:47 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/20 16:57:34 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,35 +24,33 @@ void	print_sign_decimal(t_pf *arg, t_buff *arg_buff)
 
 void	pre_padding_decimal(t_pf *arg, t_buff *arg_buff, size_t nbr_len)
 {
-	size_t precis = arg->precision;
-	size_t width = arg->width;
 	char char_to_fill;
 
+	char_to_fill = ' ';
 	if ((arg->flags & FLAG_ZERO) && !(arg->flags & FLAG_GOT_PRECISION))
 	{
 		char_to_fill = '0';
 		print_sign_decimal(arg, arg_buff);
 	}
-	else
-		char_to_fill = ' ';
 	if (!(arg->flags & FLAG_MINUS))
 	{
-		if (width > precis && precis > nbr_len)
-			push_chars(arg_buff, ' ', width - precis);
-		if (width > nbr_len && nbr_len > precis && (arg->flags & FLAG_GOT_PRECISION))
-			push_chars(arg_buff, char_to_fill, width - nbr_len);
-		if (width > precis && precis == nbr_len)
-			push_chars(arg_buff, char_to_fill, width - precis);
-		if (width > nbr_len && !(arg->flags & FLAG_GOT_PRECISION))
-			push_chars(arg_buff, char_to_fill, width - nbr_len);
+		if (arg->width > arg->precision && arg->precision > nbr_len)
+			push_chars(arg_buff, ' ', arg->width - arg->precision);
+		if (arg->width > nbr_len && nbr_len > arg->precision &&
+				(arg->flags & FLAG_GOT_PRECISION))
+			push_chars(arg_buff, char_to_fill, arg->width - nbr_len);
+		if (arg->width > arg->precision && arg->precision == nbr_len)
+			push_chars(arg_buff, char_to_fill, arg->width - arg->precision);
+		if (arg->width > nbr_len && !(arg->flags & FLAG_GOT_PRECISION))
+			push_chars(arg_buff, char_to_fill, arg->width - nbr_len);
 	}
 	if (char_to_fill == ' ')
 		print_sign_decimal(arg, arg_buff);
-	if (precis > nbr_len)
+	if (arg->precision > nbr_len)
 	{
 		if (char_to_fill == '0')
 			print_sign_decimal(arg, arg_buff);
-		push_chars(arg_buff, '0', precis - nbr_len);
+		push_chars(arg_buff, '0', arg->precision - nbr_len);
 	}
 }
 

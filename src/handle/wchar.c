@@ -6,16 +6,16 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 22:21:07 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/28 22:21:52 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/04/20 16:48:22 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 
-size_t	wide_char_bytes(wchar_t chr)
+size_t		wide_char_bytes(wchar_t chr)
 {
 	size_t	binary_len;
-	int 		tmp;
+	int		tmp;
 
 	binary_len = 0;
 	tmp = chr;
@@ -25,12 +25,12 @@ size_t	wide_char_bytes(wchar_t chr)
 		binary_len++;
 	}
 	if (binary_len <= 7)
-		return 1;
+		return (1);
 	if (binary_len <= 11)
-		return 2;
+		return (2);
 	if (binary_len <= 16)
-		return 3;
-	return 4;
+		return (3);
+	return (4);
 }
 
 void		one_byte(t_buff *arg_buff, unsigned int chr)
@@ -40,7 +40,7 @@ void		one_byte(t_buff *arg_buff, unsigned int chr)
 
 void		two_bytes(t_buff *arg_buff, unsigned int chr)
 {
-	int 	mask;
+	int				mask;
 	unsigned char	o1;
 	unsigned char	o2;
 
@@ -69,12 +69,13 @@ void		three_bytes(t_buff *arg_buff, unsigned int chr)
 
 void		four_bytes(t_buff *arg_buff, unsigned int chr)
 {
-	unsigned int mask = 4034953344;
-	unsigned char o1;
-	unsigned char o2;
-	unsigned char o3;
-	unsigned char o4;
+	unsigned int	mask;
+	unsigned char	o1;
+	unsigned char	o2;
+	unsigned char	o3;
+	unsigned char	o4;
 
+	mask = 4034953344;
 	o1 = ((chr >> 18) << 29) >> 29;
 	o2 = ((chr >> 12) << 26) >> 26;
 	o3 = ((chr >> 6) << 26) >> 26;

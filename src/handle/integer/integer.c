@@ -13,7 +13,7 @@
 #include "../../../includes/ft_printf.h"
 #include "../../libft/libft.h"
 
-static char				*handle_intmax_t(t_pf *arg, intmax_t nbr)
+static char			*handle_intmax_t(t_pf *arg, intmax_t nbr)
 {
 	char			*res;
 	int				sign;
@@ -35,7 +35,7 @@ static char				*handle_intmax_t(t_pf *arg, intmax_t nbr)
 	return (res);
 }
 
-static char				*handle_u_intmax_t(t_pf *arg, uintmax_t nbr)
+static char			*handle_u_intmax_t(t_pf *arg, uintmax_t nbr)
 {
 	char			*res;
 	size_t			len;
@@ -88,7 +88,7 @@ static uintmax_t	handle_unsigned_length(t_pf *arg, uintmax_t nbr)
 	return ((unsigned int)nbr);
 }
 
-char							*stringify_nbr(t_pf *arg, uintmax_t nbr)
+char				*stringify_nbr(t_pf *arg, uintmax_t nbr)
 {
 	char	*nbr_str;
 
@@ -98,5 +98,5 @@ char							*stringify_nbr(t_pf *arg, uintmax_t nbr)
 		nbr_str = handle_u_intmax_t(arg, handle_unsigned_length(arg, nbr));
 	if (arg->flags & FLAG_UPPERCASE)
 		ft_strtoupp(nbr_str);
-	return nbr_str;
+	return (nbr_str);
 }

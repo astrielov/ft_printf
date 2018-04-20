@@ -15,8 +15,8 @@
 
 int		parse_width(char **format, va_list va, t_pf *arg)
 {
-	int 	w;
-	int 	found;
+	int		w;
+	int		found;
 
 	found = 0;
 	while (1)
@@ -39,7 +39,7 @@ int		parse_width(char **format, va_list va, t_pf *arg)
 			(*format)++;
 		}
 		else
-			break;
+			break ;
 	}
 	return (found);
 }

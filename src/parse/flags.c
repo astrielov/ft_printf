@@ -14,7 +14,7 @@
 
 int		parse_flags(char **format, t_pf *arg)
 {
-	int 	found;
+	int		found;
 	char	tmp;
 
 	found = 0;
@@ -34,7 +34,7 @@ int		parse_flags(char **format, t_pf *arg)
 		else if (**format == '0')
 			arg->flags |= FLAG_ZERO;
 		else
-			break;
+			break ;
 		(*format)++;
 	}
 	return (found);

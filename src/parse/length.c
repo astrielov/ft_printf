@@ -14,7 +14,7 @@
 
 int		parse_length(char **format, t_pf *arg)
 {
-	int 			found;
+	int				found;
 	unsigned int	length;
 
 	found = 0;

@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 09:34:07 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/28 09:36:10 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/04/18 12:43:46 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_strtoupp(char *str)
 		return ;
 	while (*str)
 	{
-		*str = (char )ft_toupper(*str);
+		*str = (char)ft_toupper(*str);
 		str++;
 	}
 }

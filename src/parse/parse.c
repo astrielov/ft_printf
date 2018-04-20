@@ -23,14 +23,14 @@ unsigned int	parse_atoi(char **format)
 	return (res);
 }
 
-void	pf_realloc(t_pf **arg)
+void			pf_realloc(t_pf **arg)
 {
 	if (*arg)
 		free(*arg);
 	*arg = (t_pf *)ft_memalloc(sizeof(t_pf));
 }
 
-void	parse(char **format, va_list va, t_pf **arg)
+void			parse(char **format, va_list va, t_pf **arg)
 {
 	int found;
 

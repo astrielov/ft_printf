@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 09:36:33 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/28 09:36:33 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/04/18 12:43:46 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_strtolow(char *str)
 		return ;
 	while (*str)
 	{
-		*str = (char )ft_tolower(*str);
+		*str = (char)ft_tolower(*str);
 		str++;
 	}
 }

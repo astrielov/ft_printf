@@ -6,7 +6,7 @@
 /*   By: astrelov <astrelov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/30 13:06:09 by astrelov          #+#    #+#             */
-/*   Updated: 2018/04/01 19:54:44 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/20 16:58:55 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ void	print_hash_hex(t_pf *arg, t_buff *arg_buff)
 
 void	pre_padding_hexademical(t_pf *arg, t_buff *arg_buff, size_t nbr_len)
 {
-	size_t precis = arg->precision;
-	size_t width = arg->width;
 	char	char_to_fill;
 
 	char_to_fill = (char)(arg->flags & FLAG_ZERO ? '0' : ' ');
@@ -29,24 +27,26 @@ void	pre_padding_hexademical(t_pf *arg, t_buff *arg_buff, size_t nbr_len)
 		print_hash_hex(arg, arg_buff);
 	if (!(arg->flags & FLAG_MINUS))
 	{
-		if (width > precis && precis > nbr_len)
-			push_chars(arg_buff, char_to_fill, width - precis);
-		if (width > nbr_len && nbr_len > precis && (arg->flags & FLAG_GOT_PRECISION))
-			push_chars(arg_buff, char_to_fill, width - nbr_len);
-		if (width > precis && precis == nbr_len)
-			push_chars(arg_buff, char_to_fill, width - precis);
-		if (width > nbr_len && !(arg->flags & FLAG_GOT_PRECISION))
-			push_chars(arg_buff, char_to_fill, width - nbr_len);
+		if (arg->width > arg->precision && arg->precision > nbr_len)
+			push_chars(arg_buff, char_to_fill, arg->width - arg->precision);
+		if (arg->width > nbr_len && nbr_len > arg->precision &&
+				(arg->flags & FLAG_GOT_PRECISION))
+			push_chars(arg_buff, char_to_fill, arg->width - nbr_len);
+		if (arg->width > arg->precision && arg->precision == nbr_len)
+			push_chars(arg_buff, char_to_fill, arg->width - arg->precision);
+		if (arg->width > nbr_len && !(arg->flags & FLAG_GOT_PRECISION))
+			push_chars(arg_buff, char_to_fill, arg->width - nbr_len);
 	}
-	if (precis > nbr_len)
+	if (arg->precision > nbr_len)
 	{
 		if (arg->flags & FLAG_HASH && nbr_len)
 			print_hash_hex(arg, arg_buff);
-		push_chars(arg_buff, '0', precis - nbr_len);
+		push_chars(arg_buff, '0', arg->precision - nbr_len);
 	}
 }
 
-void	fill_hexademical(t_pf *arg, t_buff *arg_buff, char *nbr_str, size_t nbr_len)
+void	fill_hexademical(t_pf *arg, t_buff *arg_buff, char *nbr_str,
+						size_t nbr_len)
 {
 	if (arg->flags & FLAG_HASH && nbr_len >= arg->precision && nbr_len)
 		if (!(nbr_len == 1 && *nbr_str == '0'))

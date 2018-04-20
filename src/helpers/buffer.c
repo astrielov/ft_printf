@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 17:56:58 by astrielov         #+#    #+#             */
-/*   Updated: 2018/03/28 21:50:00 by astrielov        ###   ########.fr       */
+/*   Updated: 2018/04/18 12:43:46 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	buff_realloc(t_buff *buff)
 
 	if (!(buff->buff))
 	{
-		buff->size = 1 << 10; // 1024
+		buff->size = 1 << 10;
 		buff->buff = (char *)ft_memalloc(buff->size);
 		return ;
 	}

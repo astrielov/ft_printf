@@ -13,14 +13,14 @@
 #include "../../includes/ft_printf.h"
 #include "../libft/libft.h"
 
-size_t str_bytes_to_print(t_pf *arg, char *str)
+size_t	str_bytes_to_print(t_pf *arg, char *str)
 {
 	size_t	str_bytes;
 
 	str_bytes = ft_strlen(str);
 	if ((arg->flags & FLAG_GOT_PRECISION) && str_bytes > arg->precision)
 		str_bytes = arg->precision;
-	return str_bytes;
+	return (str_bytes);
 }
 
 void	str_pre_padding(t_pf *arg, t_buff *arg_buff, size_t str_bytes_to_print)
@@ -73,7 +73,6 @@ void	handle_string(t_pf *arg, t_buff *arg_buff, wchar_t *str)
 		str_bytes = wstr_bytes_to_print(arg, str);
 	else
 		str_bytes = str_bytes_to_print(arg, (char *)str);
-
 	str_pre_padding(arg, arg_buff, str_bytes);
 	if (arg->specifier == 's')
 		fill_str(arg_buff, (char *)str, str_bytes);

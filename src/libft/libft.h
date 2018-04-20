@@ -6,14 +6,12 @@
 /*   By: astrelov <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/30 14:18:27 by astrelov          #+#    #+#             */
-/*   Updated: 2017/10/30 14:21:17 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/18 12:43:46 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
-#include <stdio.h>
 
 # include <unistd.h>
 # include <stdlib.h>

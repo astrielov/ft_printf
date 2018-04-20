@@ -13,7 +13,7 @@
 #include "../../includes/ft_printf.h"
 #include "../libft/libft.h"
 
-void		prepare_number_arg(t_pf *arg)
+void	prepare_number_arg(t_pf *arg)
 {
 	if (arg->specifier == 'X' || arg->specifier == 'O')
 		arg->flags |= FLAG_UPPERCASE;
@@ -21,7 +21,7 @@ void		prepare_number_arg(t_pf *arg)
 		arg->length = LENGTH_LONG;
 	if (ft_strchr("DOXU", arg->specifier))
 		arg->specifier += 32;
-	if(arg->specifier == 'i')
+	if (arg->specifier == 'i')
 		arg->specifier = 'd';
 	if (arg->specifier != 'd')
 		arg->flags &= ~(FLAG_PLUS | FLAG_SPACE);
@@ -38,27 +38,25 @@ void		prepare_number_arg(t_pf *arg)
 
 void	handle_number(t_pf *arg, t_buff *arg_buff, uintmax_t nbr)
 {
-	char		*nbr_str;
+	char	*nbr_str;
 	size_t	nbr_len;
 	size_t	bytes_left;
 
 	prepare_number_arg(arg);
 	nbr_str = stringify_nbr(arg, nbr);
 	nbr_len = ft_strlen(nbr_str);
-
 	bytes_left = arg_buff->size - arg_buff->index;
-	while (bytes_left < nbr_len || bytes_left < arg->width || bytes_left < arg->precision)
+	while (bytes_left < nbr_len || bytes_left < arg->width ||
+			bytes_left < arg->precision)
 	{
 		buff_realloc(arg_buff);
 		bytes_left = arg_buff->size - arg_buff->index;
 	}
-
 	if (arg->base == 8)
 		octal(arg, arg_buff, nbr_str, nbr_len);
 	if (arg->base == 10)
 		decimal(arg, arg_buff, nbr_str, nbr_len);
 	if (arg->base == 16)
 		hexademical(arg, arg_buff, nbr_str, nbr_len);
-
 	ft_memdel((void **)&nbr_str);
 }
