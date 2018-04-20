@@ -6,19 +6,22 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/28 10:21:37 by astrielov         #+#    #+#             */
-/*   Updated: 2018/04/20 15:24:27 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/20 15:25:13 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/ft_printf.h"
 #include "../libft/libft.h"
 
-void	parse_precision(char **format, va_list va, t_pf *arg)
+int		parse_precision(char **format, va_list va, t_pf *arg)
 {
 	int	precis;
+	int found;
 
+	found = 0;
 	if (**format == '.')
 	{
+		found = 1;
 		(*format)++;
 		if (ft_isdigit(**format))
 		{
@@ -40,4 +43,5 @@ void	parse_precision(char **format, va_list va, t_pf *arg)
 			arg->precision = 0;
 		}
 	}
+	return (found);
 }

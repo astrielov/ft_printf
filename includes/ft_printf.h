@@ -59,11 +59,10 @@ int 							ft_printf(const char *format, ...);
 
 unsigned int					parse_atoi(char **format);
 void							parse(char **format, va_list va, t_pf **arg);
-void							parse_flags(char **format, t_pf *arg);
-void							parse_width(char **format, va_list va, t_pf *arg);
-void							parse_precision(char **format, va_list va, t_pf *arg);
-void							parse_length(char **format, t_pf *arg);
-//void							parse_specifier(char **format, t_pf *pf);
+int								parse_flags(char **format, t_pf *arg);
+int								parse_width(char **format, va_list va, t_pf *arg);
+int								parse_precision(char **format, va_list va, t_pf *arg);
+int								parse_length(char **format, t_pf *arg);
 
 
 t_buff							*handle_argument(va_list va, t_pf *pf);

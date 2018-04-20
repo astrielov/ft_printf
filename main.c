@@ -6,7 +6,7 @@
 /*   By: astrelov <astrelov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/04 16:55:40 by astrelov          #+#    #+#             */
-/*   Updated: 2018/04/20 15:20:20 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/20 16:01:19 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -719,6 +719,20 @@ void	invalid_specifier_tests(int *failed, int *succeed)
 	a = ft_printf("%ll#x", 9223372036854775807);
 	puts("$");
 	b = printf("%ll#x", 9223372036854775807);
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
+	a = ft_printf("%zhd", 4294967296);
+	puts("$");
+	b = printf("%zhd", 4294967296);
+	puts("$\n");
+	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
+	if (a != b) *failed += 1; else *succeed += 1;
+
+	a = ft_printf("%jhd", 9223372036854775807);
+	puts("$");
+	b = printf("%jhd", 9223372036854775807);
 	puts("$\n");
 	if (a != b)	printf("\033[31;1m>>>> RESULT: ft_pf(%d), pf(%d) <<<<\033[0m\n\n\n", a, b);
 	if (a != b) *failed += 1; else *succeed += 1;

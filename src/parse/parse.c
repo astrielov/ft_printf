@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/27 21:28:40 by astrielov         #+#    #+#             */
-/*   Updated: 2018/04/18 15:54:30 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/20 15:47:00 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,21 +32,19 @@ void	pf_realloc(t_pf **arg)
 
 void	parse(char **format, va_list va, t_pf **arg)
 {
+	int found;
+
 	pf_realloc(arg);
-//	printf("before flags: %s$\n", *format);
-	parse_flags(format, *arg);
-//	printf("before width: %s$\n", *format);
-	parse_width(format, va, *arg);
-//	printf("before precis: %s$\n", *format);
-	parse_precision(format, va, *arg);
-//	printf("before length: %s$\n", *format);
-	parse_length(format, *arg);
-//	printf("before specifier: %s$\n", *format - 1);
-//	(*arg)->specifier = '1';
+	found = 1;
+	while (found)
+	{
+		found = 0;
+		found += parse_flags(format, *arg);
+		found += parse_width(format, va, *arg);
+		found += parse_precision(format, va, *arg);
+		found += parse_length(format, *arg);
+	}
 	(*arg)->specifier = *((*format)++);
 	if (!(*arg)->specifier)
 		(*format)--;
-//	printf("specif == 0: %d$\n", (*arg)->specifier == '\0');
-//	printf("after specifier: %s$\n", *format - 1);
-//	printf("specifier = %c$\n", (*arg)->specifier);
 }

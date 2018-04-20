@@ -6,7 +6,7 @@
 /*   By: astrielov <astrielov@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/27 16:32:56 by astrielov         #+#    #+#             */
-/*   Updated: 2018/04/18 15:20:25 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/04/20 15:13:04 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,8 +70,11 @@ void		inner_pf(char *format, va_list va, t_buff *buff)
 		{
 			parse(&format, va, &arg_params);
 //			debug_print_pf(arg_params);
-			arg_buff = handle_argument(va, arg_params);
-			concat_buffs(buff, &arg_buff);
+			if (arg_params->specifier)
+			{
+				arg_buff = handle_argument(va, arg_params);
+				concat_buffs(buff, &arg_buff);
+			}
 		}
 	}
 	ft_memdel((void **) &arg_params);
