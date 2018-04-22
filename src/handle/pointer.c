@@ -80,4 +80,5 @@ void	handle_pointer(t_pf *arg, t_buff *arg_buff, size_t nbr)
 	pre_padding_ptr(arg, arg_buff, nbr_len);
 	fill_ptr(arg, arg_buff, nbr_str, nbr_len);
 	post_padding_ptr(arg, arg_buff, nbr_len);
+	ft_memdel((void **)&nbr_str);
 }
