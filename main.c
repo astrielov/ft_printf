@@ -6,7 +6,7 @@
 /*   By: astrelov <astrelov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/04 16:55:40 by astrelov          #+#    #+#             */
-/*   Updated: 2018/04/20 16:01:19 by astrelov         ###   ########.fr       */
+/*   Updated: 2018/07/20 15:03:56 by astrelov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -764,4 +764,6 @@ int 	main()
 
 	printf("\n\n\033[32;1m...........................RETURNED VALUE EQUAL:\t%d\033[0m\n", succeed);
 	printf("\033[31;1m...........................RETURNED VALUE NOT EQUAL:\t%d\033[0m\n\n\n", failed);
+
+	system("leaks -quiet a.out");
 }

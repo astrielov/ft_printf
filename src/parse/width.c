@@ -13,9 +13,22 @@
 #include "../../includes/ft_printf.h"
 #include "../libft/libft.h"
 
-int		parse_width(char **format, va_list va, t_pf *arg)
+void	width_helper(char **format, va_list va, t_pf *arg)
 {
 	int		w;
+
+	if ((w = va_arg(va, int)) < 0)
+	{
+		arg->flags |= FLAG_MINUS;
+		arg->width = (unsigned int)-w;
+	}
+	else
+		arg->width = (unsigned int)w;
+	(*format)++;
+}
+
+int		parse_width(char **format, va_list va, t_pf *arg)
+{
 	int		found;
 
 	found = 0;
@@ -29,14 +42,7 @@ int		parse_width(char **format, va_list va, t_pf *arg)
 		else if (**format == '*')
 		{
 			found = 1;
-			if ((w = va_arg(va, int)) < 0)
-			{
-				arg->flags |= FLAG_MINUS;
-				arg->width = (unsigned int)-w;
-			}
-			else
-				arg->width = (unsigned int)w;
-			(*format)++;
+			width_helper(format, va, arg);
 		}
 		else
 			break ;

@@ -13,9 +13,20 @@
 #include "../../includes/ft_printf.h"
 #include "../libft/libft.h"
 
-int		parse_precision(char **format, va_list va, t_pf *arg)
+void	pres_helper(char **format, va_list va, t_pf *arg)
 {
 	int	precis;
+
+	if ((precis = va_arg(va, int)) >= 0)
+	{
+		arg->precision = (unsigned int)precis;
+		arg->flags |= FLAG_GOT_PRECISION;
+	}
+	(*format)++;
+}
+
+int		parse_precision(char **format, va_list va, t_pf *arg)
+{
 	int found;
 
 	found = 0;
@@ -29,14 +40,7 @@ int		parse_precision(char **format, va_list va, t_pf *arg)
 			arg->flags |= FLAG_GOT_PRECISION;
 		}
 		else if (**format == '*')
-		{
-			if ((precis = va_arg(va, int)) >= 0)
-			{
-				arg->precision = (unsigned int)precis;
-				arg->flags |= FLAG_GOT_PRECISION;
-			}
-			(*format)++;
-		}
+			pres_helper(format, va, arg);
 		else
 		{
 			arg->flags |= FLAG_GOT_PRECISION;

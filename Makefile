@@ -32,6 +32,7 @@ SRCS =	src/ft_printf.c \
 		src/handle/integer/octal.c \
 		src/handle/integer/decimal.c \
 		src/handle/integer/hexademical.c \
+		src/handle/integer/tmp.c \
 		src/helpers/buffer.c \
 		src/helpers/push_chars.c \
 		src/libft/ft_atoi.c \

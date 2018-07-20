@@ -96,10 +96,10 @@ set(FT_PRINTF_NEW
         src/handle/integer/octal.c
         src/handle/integer/hexademical.c
         src/handle/integer/decimal.c
-        src/helpers/push_chars.c src/handle/invalid_specifier.c)
+        src/helpers/push_chars.c
+        src/handle/invalid_specifier.c src/handle/integer/tmp.c)
 
 add_library(ft_printf_new
         ${FT_PRINTF_NEW}
         ${LIBFT}
-        debug_print_pf.c
         )
